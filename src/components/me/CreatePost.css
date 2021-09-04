@@ -1,0 +1,41 @@
+
+.create {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: rgb(240, 239, 239);
+}
+
+.create:focus {
+    outline: none;
+}
+
+.create_post_image {
+    background-color: rgb(250, 246, 246);
+    width: 50%;
+    border-radius: 1rem;
+    margin: 2.5rem;
+}
+
+.image {
+    margin: 30%;
+    font-size: larger;
+}
+
+.create_post_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2.5rem;
+}
+
+.source {
+    font-size: large;
+}
+
+
+.create_post_button {
+    width: 7rem;
+    height: 3rem;
+    border-radius: 1rem;
+    background-color: rgb(130, 180, 221);
+}

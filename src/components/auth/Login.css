@@ -1,0 +1,35 @@
+.dialog {
+  min-width: 15rem;
+  min-height: 5rem;
+}
+
+body {
+  background-color: #edf8fd;
+}
+
+.login-body {
+  background-image: url(./react.png);
+  background-size: 20%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-blend-mode:soft-light;
+}
+
+h1 {
+color:cornflowerblue;
+}
+
+.container--login {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 10% 25%;
+}
+
+.sign-in {
+  background-color: rgb(124, 165, 241);
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}

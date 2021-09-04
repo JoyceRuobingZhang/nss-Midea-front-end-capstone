@@ -1,0 +1,202 @@
+.me {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    border: 1px none none ;
+    background-color: rgb(238, 243, 247);
+    width: 90%;
+    height: 100%;
+    margin:auto;
+    margin-bottom: 2rem;
+    filter: drop-shadow(0 0 1.6rem rgb(188, 195, 197));
+    position: relative;
+}
+
+.create-icon {
+    width: 3rem;
+    opacity: 0.7;
+    position: absolute;
+    margin: 3rem;
+}
+
+.create_post {
+    position: relative;
+    display: inline-block;
+  }
+  
+.create_post .tiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(194, 195, 197);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    margin: 5.5rem;
+    z-index: 1;
+  }
+  
+.create_post:hover .tiptext {
+    visibility: visible;
+    filter: drop-shadow(0 0 0.6rem rgb(228, 228, 230));
+  }
+
+.create-icon:hover {
+    width: 3.2rem;
+    opacity: 0.7;
+    position: absolute;
+    margin: 3rem;
+    filter: drop-shadow(0 0 0.8rem rgb(69, 128, 236));
+}
+
+.me_profileImage {
+    margin-top: 2rem;
+    margin-left: 45%;
+}
+
+
+.me_accountProfile {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.me_name {
+    margin: 1rem 0 1rem 41%;
+    font-size: 2.5rem;
+}
+
+.me_follow {
+    display: flex;
+    margin-left: 41%;
+    margin-top: 1rem;
+}
+
+.following, .follower {
+    margin-right: 0.5rem;
+    border: none;
+    font-family: 'Hina Mincho', serif;
+    font-size: 1.2rem;
+    color:rgb(97, 89, 168);
+    background:none;
+}
+
+.following_accounts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.following_account {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.following_account_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.following_profile_images {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.unfollow {
+    box-shadow: 0px 10px 14px -7px #dcecfb;
+	background:linear-gradient(to bottom, #ece4d3 6%, #e08481 100%);
+	background-color:#d8e9fa;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:1rem;
+	padding:0.6rem;
+	text-decoration:none;
+    border: none;
+    text-shadow:0px 1px 0px #528ecc;
+    width: 6rem;
+    height: 2rem;
+    margin-left: 2rem;
+    align-self:center;
+}
+
+.unfollow:hover {
+    background:linear-gradient(to bottom, #ecdec2 5%, #f06c6c 100%);
+	background-color:#f0e4d2;
+}
+
+.unfollow:active {
+	position:relative;
+	top:1px;
+}
+
+.tabs {
+    margin-top: 1rem;
+    background-color:rgb(225, 231, 235);
+    cursor: pointer;
+}
+
+.tab {
+    font-size:1.2rem;
+    font-family:'Times New Roman', Times, serif;
+    padding: 0.5rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+
+.tab:hover {
+    font-size:1.2rem;
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(182, 182, 182);
+}
+
+.my_favorites {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.favorite_post {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    background-color: rgb(233, 226, 243);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.favorite_post:hover {
+    filter: drop-shadow(0 0 0.75rem rgb(147, 164, 221));
+}
+
+.favorite_post_img{
+    width: 220px;
+    height: 300px;
+    object-fit:cover;
+    border-radius: 1rem;
+}
+
+.delete_icon {
+  width: 1.2rem;
+}
+
+.delete_icon:hover {
+  filter:invert(50%)
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+ 
