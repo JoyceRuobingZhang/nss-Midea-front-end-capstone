@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Launcher } from "popup-chat-react";
 
-export function Message() {
+export function CustomerService() {
   const [state, setState] = useState({
     messageList: [],
     newMessagesCount: 0,

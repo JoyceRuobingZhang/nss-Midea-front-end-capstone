@@ -142,7 +142,7 @@
     },
     {
       "id": 7,
-      "userId": 3,
+      "userId": 14,
       "imageURL": "httPs://artist.com/photos/arts/big/illusive-boats-180333251.jpg",
       "time": "2/17/2018 8:40:32 PM",
       "subject": "art",
@@ -346,6 +346,15 @@
       "subject": "wedding",
       "source": "https://invevents.com/2020/04/29/intimate-wedding-reception-ideas-when-small-weddings-mean-big-design/",
       "id": 29
+    },
+    {
+      "userId": 9,
+      "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/domestic-cat-lies-in-a-basket-with-a-knitted-royalty-free-image-1592337336.jpg",
+      "time": "Wed Sep 08 2021",
+      "caption": "Cats derive pleasure, safety, and comfort from their relationships with humans. However, all cats express their happiness with their human companions differently. Long story short? Cats have distinct personalities, just like people...",
+      "subject": "pet",
+      "source": "https://hips.hearstapps.com",
+      "id": 30
     }
   ],
   "favorites": [
@@ -378,6 +387,16 @@
       "userId": 9,
       "postId": 29,
       "id": 8
+    },
+    {
+      "userId": 9,
+      "postId": 27,
+      "id": 11
+    },
+    {
+      "userId": 9,
+      "postId": 9,
+      "id": 12
     }
   ],
   "friends": [
@@ -397,9 +416,14 @@
       "id": 6
     },
     {
+      "userId": 5,
+      "currentUserId": 9,
+      "id": 8
+    },
+    {
       "userId": 3,
       "currentUserId": 9,
-      "id": 7
+      "id": 9
     }
   ],
   "comments": [
@@ -408,25 +432,40 @@
       "postId": 27,
       "userId": 4,
       "time": "Thu Sep 02 2021 17:35:04",
-      "content": "I made this for my kids, who are usually sooooooo picky. Seriously, the younger one only eats PB&J and the oldest only eats chicken nuggets. I know, I know, it's not a healthy diet, but what am I to do? I've tried sneaking vegetables into the nuggets and the PB&J sandwich, but the kids caught on and they threw the food in the toilet, which of course clogged the toilet and caused it to overflow, and all this happened while my husband was out of town again, so ... sorry, where was I going with this? Oh yeah, so the chicken soup ..."
+      "content": "I made this for my kids, who are usually sooooooo picky. Seriously, the younger one only eats PB&J and the oldest only eats chicken nuggets. I know, I know, it's not a healthy diet, but what am I to do? I've tried sneaking vegetables into the nuggets and the PB&J sandwich, but the kids caught on and they threw the food in the toilet, which of course clogged the toilet and caused it to overflow, and all this happened while my husband was out of town again, so ... sorry, where was I going with this? Oh yeah, so the chicken soup ...",
+      "replyInput": false
     },
     {
       "id": 2,
       "postId": 27,
       "userId": 7,
-      "content": "Apparently you just freeze the stuff. Oh but you need a tray. That's how they get ya. "
+      "time": "Thu Sep 04 2021 25:35:04",
+      "content": "Apparently you just freeze the stuff. Oh but you need a tray. That's how they get ya. ",
+      "replyInput": false
     },
     {
-      "id": 2,
+      "id": 3,
       "postId": 9,
       "userId": 13,
-      "content": "This is like a dream come true... Can't wait to build may personal pc... "
+      "time": "Thu Sep 05 2021 20:35:04",
+      "content": "This is like a dream come true... Can't wait to build may personal pc... ",
+      "replyInput": false
     },
     {
-      "id": 2,
+      "id": 4,
       "postId": 9,
       "userId": 10,
-      "content": "  I feel sorry for gamers trying to build a decent rig this year, a mid range GPU alone now costs more than the whole rig I built in May 2020 with a mid range GPU."
+      "time": "Thu Sep 06 2021 7:35:04",
+      "content": "I feel sorry for gamers trying to build a decent rig this year, a mid range GPU alone now costs more than the whole rig I built in May 2020 with a mid range GPU.",
+      "replyInput": true
+    },
+    {
+      "id": 5,
+      "postId": 26,
+      "userId": 14,
+      "time": "Thu Sep 06 2021 7:35:04",
+      "content": "Cats are literally my favorite on this",
+      "replyInput": false
     }
   ],
   "commentResponses": [
@@ -434,7 +473,22 @@
       "id": 1,
       "commentId": 1,
       "userId": 5,
+      "time": "Thu Sep 07 2021 12:35:04",
       "content": "That's pretty funny"
+    },
+    {
+      "commentId": 1,
+      "userId": 9,
+      "time": "Tue Sep 07 2021 18:50:35",
+      "content": "😅😂",
+      "id": 2
+    },
+    {
+      "commentId": 4,
+      "userId": 9,
+      "time": "Wed Sep 08 2021 10:13:43",
+      "content": "indeed!",
+      "id": 3
     }
   ]
 }

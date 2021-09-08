@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
 .me {
     display: flex;
     flex-direction: column;
@@ -7,7 +9,6 @@
     width: 90%;
     height: 100%;
     margin:auto;
-    margin-bottom: 2rem;
     filter: drop-shadow(0 0 1.6rem rgb(188, 195, 197));
     position: relative;
 }
@@ -65,8 +66,9 @@
 }
 
 .me_name {
-    margin: 1rem 0 1rem 41%;
+    margin: 1rem 0 1rem 42%;
     font-size: 2.5rem;
+    font-family: 'EB Garamond', serif;
 }
 
 .me_follow {
@@ -78,8 +80,8 @@
 .following, .follower {
     margin-right: 0.5rem;
     border: none;
-    font-family: 'Hina Mincho', serif;
-    font-size: 1.2rem;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.3rem;
     color:rgb(97, 89, 168);
     background:none;
 }
@@ -100,6 +102,13 @@
 .following_account_info {
     display: flex;
     justify-content: space-between;
+    
+}
+
+.following_name, .follower_name {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.2rem;
+    align-self: center;
 }
 
 .following_profile_images {
@@ -148,7 +157,7 @@
     font-size:1.2rem;
     font-family:'Times New Roman', Times, serif;
     padding: 0.5rem;
-    margin-left: 1.5rem;
+    margin-left: 6%;
     cursor: pointer;
 }
 
@@ -158,14 +167,15 @@
     background-color: rgb(182, 182, 182);
 }
 
-.my_favorites {
+.my_favorites, .my_posts {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 100%;
+    margin:1rem 3rem 1rem 3rem;
 }
 
-.favorite_post {
+.favorite_post, .my_post  {
     display: flex;
     flex-direction: column;
     margin: 1.5rem;
@@ -174,23 +184,27 @@
     cursor: pointer;
 }
 
-.favorite_post:hover {
+.favorite_post:hover, .my_posts:hover {
     filter: drop-shadow(0 0 0.75rem rgb(147, 164, 221));
 }
 
-.favorite_post_img{
+.favorite_post_img, .my_post_img{
     width: 220px;
     height: 300px;
     object-fit:cover;
     border-radius: 1rem;
 }
 
-.delete_icon {
+.delete_icon, .edit_icon {
   width: 1.2rem;
 }
 
-.delete_icon:hover {
+.delete_icon:hover, .edit_icon:hover {
   filter:invert(50%)
+}
+
+.icons {
+    align-self: center;
 }
 
 button {
@@ -198,5 +212,6 @@ button {
     background: none;
     cursor: pointer;
 }
+
 
  

@@ -13,8 +13,50 @@ export const CommentProvider = (props) => {
         .then(setComments)
     }
 
+    const addComment = (commentObj) => {
+        return fetch(`${apiURL}/comments`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(commentObj)
+        })
+        .then(res => res.json())
+        .then(getComments)
+    }
+
+    const deleteComment = commentId => {
+        return fetch(`${apiURL}/comments/${commentId}`, {
+            method: "DELETE"     
+        })
+        .then(getComments)
+    }
+
+    const openReplyInput = commentId => {
+        return fetch(`${apiURL}/comments/${commentId}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({replyInput: true})  
+        })
+        .then(getComments)
+    }
+
+    const closeReplyInput = commentId => {
+        return fetch(`${apiURL}/comments/${commentId}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({replyInput: false})  
+        })
+        .then(getComments)
+    }
+
+
     return (
-        <CommentContext.Provider value={{comments, getComments}}>
+        <CommentContext.Provider value={{comments, getComments, addComment, deleteComment, openReplyInput, closeReplyInput}}>
             {props.children}
         </CommentContext.Provider>
     )

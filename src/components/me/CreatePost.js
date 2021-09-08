@@ -1,32 +1,44 @@
 import React, { useContext, useEffect, useState } from "react"
-import { useHistory } from "react-router-dom"
+import { useHistory, useParams } from "react-router-dom"
 import { HomeContext } from "../home/HomeProvider"
 import { UserContext } from "../user/UserProvider"
+// import { UploadImage } from "./UploadImage"
 import './CreatePost.css'
 
 export const CreatePost = () => {
-    const { feed, getFeed, addToFeed } = useContext(HomeContext)
+    const { feed, getFeed, addToFeed, getPostById } = useContext(HomeContext)
     const { users, getUsers} = useContext(UserContext)
     const [currentUser, setCurrentUser] = useState({profileURL: "", name: ""})
 
+    const{ postId } = useParams()
     const history = useHistory()
     const currentUserId = sessionStorage.getItem("midea_user")
 
     useEffect(() => {getUsers()}, [])
+    useEffect(() => {getFeed()}, [])
 
     useEffect(() => {
         const currentUserObj = users.find(user => user.id === parseInt(currentUserId)) || {profileURL: "", name: ""}
         setCurrentUser(currentUserObj)
     }, [users])
     
-    const [post, setPost] = useState({
-        userId: parseInt(currentUserId),
-        imageURL: "",
-        time: Date(Date.now()).slice(0,24),
-        caption: "",
-        subject: "",
-        source: ""
-    })
+    const [post, setPost] = useState({})
+
+    useEffect(() => { 
+        if(postId){
+            getPostById(postId).then(post => setPost(post)) 
+        } else {
+            setPost({
+                userId: parseInt(currentUserId),
+                imageURL: "",
+                time: Date(Date.now()).slice(0,24),
+                caption: "",
+                subject: "",
+                source: ""
+            })
+        }
+    }, [feed])
+
 
     const handleControlledInputChange = (event) => {
         const newPost = { ...post }
@@ -52,37 +64,45 @@ export const CreatePost = () => {
     }}
     
 
-
     return (
         <>
-        <div className="post">
+        <div className="create_box">
             <div className="create_post_image">
-                <input type="text" id="imageURL" className="create image" placeholder="Enter image URL" 
-                value={post.imageURL} onChange={handleControlledInputChange}/>
+                {
+                    postId?
+                    <>
+                        <img className="defaultValue_image" src={post.imageURL}/>
+                        <label>Update Image URL:  </label><input type="text" id="imageURL"  placeholder="Enter image URL" 
+                        value={post.imageURL} onChange={handleControlledInputChange} defaultValue={post.imageURL}/>
+                    </>:
+                    <>
+                        <input type="text" id="imageURL" className="create image" placeholder="Enter image URL" 
+                        value={post.imageURL} onChange={handleControlledInputChange} defaultValue={post.imageURL}/>
+                    </>
+                }
             </div>
             <div className="create_post_info">
                 <div className="post_source">
                     <input type="text" id="source" className="create source" placeholder="Enter source link" 
-                    value={post.source} onChange={handleControlledInputChange}/>
+                    value={post.source} onChange={handleControlledInputChange} defaultValue={post.source} />
                 </div>
 
                 <div className="post_subject">
                     <input type="text" id="subject" className="create subject" placeholder="Enter subject here" 
-                    value={post.subject} onChange={handleControlledInputChange}/>
+                    value={post.subject} onChange={handleControlledInputChange} defaultValue={post.subject} />
                 </div>
 
-                <div className="post_author_info">
+                <div className="create_author_info">
                     <img className="account_profile" src={currentUser.profileURL} alt="account profile picture" />
                     <h3>{currentUser.name}</h3> 
                 </div>
                 
-                <div className="post_caption">
-                    <input type="text" id="caption" className="create caption" placeholder="Enter post caption" 
-                    value={post.caption} onChange={handleControlledInputChange}/>
+                <div className="create_post_caption">
+                    <textarea type="text" id="caption" className="create caption" placeholder="Enter post caption" 
+                    value={post.caption} onChange={handleControlledInputChange} defaultValue={post.caption}  />
                 </div>
-                <button className="create_post_button" onClick={handleCreatePost}> Create Post</button>
+                <button className="create_post_button" onClick={handleCreatePost}> {postId ? <> Save Changes </> : <> Create Post </>}</button>
             </div>
-           
         </div>
     </>
     )

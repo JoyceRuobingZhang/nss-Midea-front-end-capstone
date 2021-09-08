@@ -13,8 +13,27 @@ export const CommentResponseProvider = (props) => {
         .then(setCommentResponses)
     }
 
+    const addCommentResponse = (commentResponseObj) => {
+        return fetch(`${apiURL}/commentResponses`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(commentResponseObj)
+        })
+        .then(res => res.json())
+        .then(getCommentResponses)
+    }
+
+    const deleteCommentResponse = commentId => {
+        return fetch(`${apiURL}/commentResponses/${commentId}`, {
+            method: "DELETE"     
+        })
+        .then(getCommentResponses)
+    }
+
     return (
-        <CommentResponseContext.Provider value={{commentResponses, getCommentResponses}}>
+        <CommentResponseContext.Provider value={{commentResponses, getCommentResponses, addCommentResponse, deleteCommentResponse}}>
             {props.children}
         </CommentResponseContext.Provider>
     )

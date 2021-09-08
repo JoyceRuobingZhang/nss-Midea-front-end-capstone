@@ -24,7 +24,7 @@ export const Navbar = () => {
           <Link className="nav-link" to="/me">Me</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/">Messages</Link>
+          <Link className="nav-link" to="/messages">Messages</Link>
         </li>   
       </ul>
     </nav>

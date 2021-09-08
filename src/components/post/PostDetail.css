@@ -145,6 +145,19 @@
     width: 600px;
 }
 
+.reply {
+    color: rgb(150, 148, 148);
+}
+
+.reply:hover {
+    color: rgb(45, 66, 163);
+}
+
+.add_reply {
+    background: rgb(197, 200, 201) ;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
 .slider {
     margin: 2rem;
     display: flex;

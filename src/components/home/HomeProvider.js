@@ -25,8 +25,18 @@ export const HomeProvider = (props) =>{
         .then(getFeed)
     }
 
+    const deletePost = (postId) => {
+        return fetch(`http://localhost:8000/posts/${postId}`, {method:"DELETE"})
+        .then(getFeed)
+    }
+
+    const getPostById = (postId) => {
+        return fetch(`http://localhost:8000/posts/${postId}`)
+        .then(response => response.json())
+    }
+
     return (
-        <HomeContext.Provider value={{feed, getFeed, searchTerms, setSearchTerms, addToFeed}}>
+        <HomeContext.Provider value={{feed, getFeed, searchTerms, setSearchTerms, addToFeed, deletePost, getPostById}}>
             {props.children}
         </HomeContext.Provider>
     )

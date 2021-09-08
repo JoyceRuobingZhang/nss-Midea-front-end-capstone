@@ -9,13 +9,14 @@ import { FavoriteContext } from "../user/FavoriteProvider";
 import {Popup} from './Popup';
 import Create from './create.png'
 import Delete from './delete.png'
+import Edit from './edit.png'
 import './Me.css'
 
 export const Me = () => {
 
     // get current user name   // get following/follower  // get my favorite posts
     const {users, getUsers} = useContext(UserContext)
-    const {feed, getFeed} = useContext(HomeContext)
+    const {feed, getFeed, deletePost} = useContext(HomeContext)
     const {friends, getFriends, unFollow } = useContext(FriendContext)
     const {favorites, getFavorites, removeFavorite} = useContext(FavoriteContext)
 
@@ -76,6 +77,16 @@ export const Me = () => {
         }}).then(() => { return MySwal.fire(<p>Successfully removed!</p>) })
     }
 
+    // delete my post
+    const handleDeletePost = (postId) => {
+        deletePost(postId).then(() => history.push("/me"))
+        setTabContent(false)
+    }
+
+    // // edit my post
+    // const handleEditPost = (postId) => {
+
+    // }
 
     return (
         <>
@@ -100,7 +111,7 @@ export const Me = () => {
                                     <li className="following_account">
                                         <div className="following_account_info">
                                             <img className="following_profile_images" src={following.user.profileURL} alt="account profile photo"/>
-                                            <div><h4>{following.user.name}</h4></div>
+                                            <div className="following_name">{following.user.name}</div>
                                         </div>
                                         <button className="unfollow" onClick={() => {unFollow(following.id)}}>unfollow</button>
                                     </li>
@@ -120,10 +131,10 @@ export const Me = () => {
                                 return (
                                     <li className="follower_account">
                                         <img className="follower_profile_images" src={follower.user.profileURL} alt="account profile photo"/>
-                                        <div><h4>{follower.user.name}</h4></div>
+                                        <div className="follower_name">{follower.user.name}</div>
                                     </li>
                                 )
-                            }) : <h3>You don't have any followers yet...</h3>}
+                            }) : <h3 className="follower_name">You don't have any followers yet...</h3>}
                             </ul>}
                             handleClose={followerTogglePopup}
                             />
@@ -153,9 +164,12 @@ export const Me = () => {
                         {
                             myPosts.map(post => {
                                 return (
-                                    <div className="favorite_post">
-                                        <Link key={post.id} to={`post/detail/${post.id}`}><img className="favorite_post_img" src={post.imageURL} alt="favorite post"/></Link>
-                                        <button onClick={() => handleRemoveFavorite(post.id)}><img className="delete_icon" src={Delete} /></button>
+                                    <div className="my_post">
+                                        <Link key={post.id} to={`post/detail/${post.id}`}><img className="my_post_img" src={post.imageURL} alt="favorite post"/></Link>
+                                        <div className="icons">
+                                        <button onClick={() => handleDeletePost(post.id)}><img className="delete_icon" src={Delete} /></button>
+                                        <button  onClick={() => history.push(`/me/edit/${post.id}`)}><img className="edit_icon" src={Edit} /></button>
+                                        </div>
                                     </div>
                                 )
                             })

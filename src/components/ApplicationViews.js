@@ -7,13 +7,14 @@ import { UserProvider } from "./user/UserProvider"
 import { HomeProvider } from "./home/HomeProvider"
 import { FriendProvider } from "./user/FriendProvider"
 import { FavoriteProvider } from "./user/FavoriteProvider"
-import { HomeList } from "./home/HomeList"
-import { PostDetail } from "./post/PostDetail"
-import { Message } from "./message/Message"
-import { Me } from "./me/Me"
-import { CreatePost } from "./me/CreatePost"
 import { CommentProvider } from "./post/CommentProvider"
 import { CommentResponseProvider } from "./post/CommentResponseProvider"
+import { HomeList } from "./home/HomeList"
+import { PostDetail } from "./post/PostDetail"
+import { CustomerService } from "./message/customerService"
+import { Me } from "./me/Me"
+import { CreatePost } from "./me/CreatePost"
+
 
 
 export const ApplicationViews = () => {
@@ -40,13 +41,24 @@ export const ApplicationViews = () => {
             <Route exact path="/me">
                 <Navbar />
                 <Me />
-                <Message />
+                <CustomerService />
             </Route>   
 
             <Route exact path="/me/edit">
                 <Navbar />
                 <CreatePost />
             </Route>   
+
+            <Route exact path="/me/edit/:postId(\d+)">
+                <Navbar />
+                <CreatePost />
+            </Route>   
+
+            <Route exact path="/messages">
+                <Navbar />
+                
+            </Route>   
+
         
         </CommentResponseProvider>
         </CommentProvider>

@@ -4,6 +4,10 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
 import { Midea } from './components/Midea';
 import reportWebVitals from './reportWebVitals';
+// import firebase from "firebase/compat/app"; // Import Firebase!!
+// import { firebaseConfig } from "./firebaseAPI"; // Import Your Config!!
+
+// firebase.initializeApp(firebaseConfig)
 
 ReactDOM.render(
   <React.StrictMode>
