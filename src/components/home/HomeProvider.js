@@ -30,13 +30,25 @@ export const HomeProvider = (props) =>{
         .then(getFeed)
     }
 
+    const updatePost = postObj => {
+        return fetch((`http://localhost:8000/posts/${postObj.id}`), {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(postObj)
+        })
+        .then(getFeed)
+    }
+
     const getPostById = (postId) => {
         return fetch(`http://localhost:8000/posts/${postId}`)
         .then(response => response.json())
     }
 
     return (
-        <HomeContext.Provider value={{feed, getFeed, searchTerms, setSearchTerms, addToFeed, deletePost, getPostById}}>
+        <HomeContext.Provider value={{feed, getFeed, searchTerms, setSearchTerms, addToFeed, deletePost, 
+            updatePost, getPostById}}>
             {props.children}
         </HomeContext.Provider>
     )

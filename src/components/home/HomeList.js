@@ -1,12 +1,16 @@
 import React, {useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { HomeContext } from './HomeProvider'
+import Filter from "./filter.png"
 import './Home.css'
 
 
 export const HomeList = () => {
     const {feed, getFeed, searchTerms} = useContext(HomeContext)
     const [ filteredFeed, setFilteredFeed ] = useState([])
+
+    const { setSearchTerms } = useContext(HomeContext)
+    useEffect(() => {setSearchTerms("")}, []) 
 
     useEffect(() => {getFeed()}, [])
     
@@ -35,7 +39,18 @@ export const HomeList = () => {
 
     return (
         <>
-        
+         <div className="filters">
+            <img src={Filter} className="filter_icon"/>
+            <button className="filter_keyword all" onClick={() => setSearchTerms("")}>All</button>
+            <button className="filter_keyword" onClick={() => setSearchTerms("food")}>Food</button>
+            <button className="filter_keyword" onClick={() => setSearchTerms("home")}>Home</button>
+            <button className="filter_keyword" onClick={() => setSearchTerms("travel")}>Travel</button>
+            <button className="filter_keyword" onClick={() => setSearchTerms("pet")}>Pet</button>
+            <button className="filter_keyword" onClick={() => setSearchTerms("electronics")}>Electronics</button>
+            <button className="filter_keyword" onClick={() => setSearchTerms("car")}>Car</button>
+            <button className="filter_keyword" onClick={() => setSearchTerms("wedding")}>Wedding</button>
+        </div>
+
          <div className="home-grid-container"> 
             {
                 shuffle(filteredFeed).map(post => {

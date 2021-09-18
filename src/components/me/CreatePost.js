@@ -6,9 +6,10 @@ import { UserContext } from "../user/UserProvider"
 import './CreatePost.css'
 
 export const CreatePost = () => {
-    const { feed, getFeed, addToFeed, getPostById } = useContext(HomeContext)
+    const { feed, getFeed, addToFeed, getPostById, updatePost } = useContext(HomeContext)
     const { users, getUsers} = useContext(UserContext)
     const [currentUser, setCurrentUser] = useState({profileURL: "", name: ""})
+    const [post, setPost] = useState({})
 
     const{ postId } = useParams()
     const history = useHistory()
@@ -22,7 +23,6 @@ export const CreatePost = () => {
         setCurrentUser(currentUserObj)
     }, [users])
     
-    const [post, setPost] = useState({})
 
     useEffect(() => { 
         if(postId){
@@ -50,6 +50,18 @@ export const CreatePost = () => {
         event.preventDefault() //Prevents the browser from submitting the form
         if (post.imageURL === "" || post.caption === "" || post.subject === "" || post.source === "") {
             window.alert("Please add all the information")
+        } else if (postId) {
+            const newPost = {
+                id: post.id,
+                userId: parseInt(currentUserId),
+                imageURL: post.imageURL,
+                time: Date(Date.now()).slice(0,15),
+                caption: post.caption,
+                subject: post.subject,
+                source: post.source
+            }
+            updatePost(newPost)
+             .then(() => history.push(`/post/detail/${post.id}`))
         } else {
             const newPost = {
                 userId: parseInt(currentUserId),
@@ -61,7 +73,8 @@ export const CreatePost = () => {
             }
             addToFeed(newPost)
              .then(() => history.push("/me"))
-    }}
+        }
+    }
     
 
     return (
@@ -99,7 +112,7 @@ export const CreatePost = () => {
                 
                 <div className="create_post_caption">
                     <textarea type="text" id="caption" className="create caption" placeholder="Enter post caption" 
-                    value={post.caption} onChange={handleControlledInputChange} defaultValue={post.caption}  />
+                 onChange={handleControlledInputChange} defaultValue={post.caption}  />
                 </div>
                 <button className="create_post_button" onClick={handleCreatePost}> {postId ? <> Save Changes </> : <> Create Post </>}</button>
             </div>

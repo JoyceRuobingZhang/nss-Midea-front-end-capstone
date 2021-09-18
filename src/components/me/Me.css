@@ -101,7 +101,7 @@
 
 .following_account_info {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     
 }
 
@@ -133,7 +133,7 @@
     text-shadow:0px 1px 0px #528ecc;
     width: 6rem;
     height: 2rem;
-    margin-left: 2rem;
+    margin-left: 8rem;
     align-self:center;
 }
 
@@ -212,6 +212,7 @@ button {
     background: none;
     cursor: pointer;
 }
+
 
 
  

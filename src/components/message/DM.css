@@ -1,0 +1,167 @@
+.DM_box {
+    position: fixed;
+    margin: 1rem;
+    top: 20%;
+    right: 0;
+    background-color: rgb(244, 246, 247);
+    width: 300px;
+    z-index: 999;
+    border-radius: 1rem;
+}
+
+.DM_header {
+    display: flex;
+    justify-content: space-around;
+    background-color:white;
+    padding: 0.5rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.DM_search {
+    width: 7rem;
+    height: 2rem;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 0.5rem;
+    background: none;
+    font-size: 0.8rem;
+}
+
+.DM_search:focus{
+    outline: none;
+    background: none;
+}
+
+.inbox {
+    font-size: 1.25rem;
+    text-align: center;
+    align-self: center;
+}
+
+.close_DM {
+    align-self: baseline;
+}
+
+.DMs {
+    padding: 0.5rem;
+}
+
+.DM {
+    display: flex;
+    margin-bottom: 0.75rem;
+}
+
+.DM_profile {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin: 0.5rem;
+}
+
+.DM_info {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.DM_preview {
+    padding: 0.25rem;
+    border-radius: 1rem;
+    text-align: left;
+    color:rgb(91, 91, 92);
+    font-size: 1rem;
+}
+
+.close_DM {
+    font-size: 1.25rem;
+    margin-top: 0.2rem;
+    opacity: 0.8;
+}
+
+.private_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.private_info {
+    display: flex;
+}
+
+.private_profile {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+.private_name {
+    font-size: 1.2rem;
+    align-self: center;
+    margin-left: 0.5rem;
+}
+
+.back_icon {
+    width: 1.2rem;
+    opacity: 0.6;
+}
+
+.conversation {
+    margin-top: 1rem;
+}
+
+.user_message {
+    background-color: rgb(224, 226, 230);
+    border-radius: 1rem;
+    margin-left: 2%;
+    margin-bottom: 0.5rem;
+    width: 80%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.my_message {
+    background-color: rgb(221, 235, 250);
+    border-radius: 1rem;
+    margin-left: 20%; 
+    margin-bottom: 0.5rem;   
+    width: 80%;
+    padding: 0.5rem;
+}
+
+.message_edit {
+    display: flex;
+    margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.message_input {
+    border: 1px solid rgb(176, 202, 226) ;
+    border-radius: 0.75rem;
+    width:90%;
+    height: 2.5rem;
+    background-color: white;
+    outline: none;
+}
+
+.send_DM_icon {
+    width: 1.8rem;
+    height: 1.8rem;
+    opacity: 0.7;
+    margin-left: 1rem;
+    align-self: center;
+    cursor: pointer;
+}
+
+.searched_users {
+    display: flex;
+    flex-direction: column;
+}
+
+.searched_user {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.searched_user_profile {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}

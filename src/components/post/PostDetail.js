@@ -127,7 +127,8 @@ export const PostDetail = () => {
                     
                 </div>
                 <div className="post_source">
-                    <h3 className="visit_source">Visit Site:</h3> <Link className='source_link'>{post.source}</Link>
+                    <h3 className="visit_source">Visit Site:</h3> 
+                    <a className='source_link' href={post.source}>{post.source}</a>
                 </div>
                 </div>
                 <div className="post_author_info">

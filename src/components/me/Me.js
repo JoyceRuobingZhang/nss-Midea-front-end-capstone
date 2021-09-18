@@ -6,8 +6,8 @@ import { HomeContext } from "../home/HomeProvider"
 import { UserContext } from '../user/UserProvider'
 import { FriendContext } from '../user/FriendProvider'
 import { FavoriteContext } from "../user/FavoriteProvider";
-import {Popup} from './Popup';
-import Create from './create.png'
+import { Popup } from './Popup';
+import Create from './create.png' 
 import Delete from './delete.png'
 import Edit from './edit.png'
 import './Me.css'
@@ -55,14 +55,15 @@ export const Me = () => {
 
     // for following/follower popup window
     const [followingIsOpen, setFollowingIsOpen] = useState(false);
+
     const followingTogglePopup = () => {
         setFollowingIsOpen(!followingIsOpen);
     }
     const [followerIsOpen, setFollowerIsOpen] = useState(false);
+
     const followerTogglePopup = () => {
         setFollowerIsOpen(!followerIsOpen);
     }
-
 
     // delete from favorite list
     const history= useHistory()
@@ -83,10 +84,6 @@ export const Me = () => {
         setTabContent(false)
     }
 
-    // // edit my post
-    // const handleEditPost = (postId) => {
-
-    // }
 
     return (
         <>
@@ -102,9 +99,10 @@ export const Me = () => {
                {currentUser.name}
             </div>
             <div className="me_follow">
-                <div className="following_section">
+                <div className="following_section ">
                     <input className="following" type="button" value={`${followingArr.length} Following`} onClick={followingTogglePopup}/>
-                    {followingIsOpen && <Popup content={
+                    {followingIsOpen && 
+                    <Popup content={
                             <ul className="following_accounts"> 
                             {followingArr.map(following => {
                                 return (
@@ -119,7 +117,7 @@ export const Me = () => {
                             })}
                             </ul>}
                             handleClose={followingTogglePopup}
-                            />
+                    />
                     }
                 </div>
                 <div className="follower_section">
@@ -140,7 +138,7 @@ export const Me = () => {
                             />
                     }
                 </div>
-            </div>
+            </div>        
 
             <div class="tabs">
                 <button class="tab" onClick={() => setTabContent(true)}>Favorites</button>
@@ -174,9 +172,9 @@ export const Me = () => {
                                 )
                             })
                         }
-                    </div>
+                        </div>
                 }
-            </div>
+        </div>
         </>
     )
 }

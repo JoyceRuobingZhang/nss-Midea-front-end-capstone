@@ -2,8 +2,8 @@
   "users": [
     {
       "id": 1,
-      "name": "Travel With Me",
-      "email": "me@me.com",
+      "name": "World Travel",
+      "email": "worldt@gmail.com",
       "profileURL": "https://i.pinimg.com/736x/e2/4a/52/e24a521d4c48ec93d4c17b5b6450d50d.jpg"
     },
     {
@@ -26,8 +26,8 @@
     },
     {
       "id": 5,
-      "name": "KitchenFun",
-      "email": "kitchenfun@yahoo.com",
+      "name": "Spiced Up",
+      "email": "spiceup@yahoo.com",
       "profileURL": "https://www.gffoodservice.com.au/content/uploads/2019/08/culinary_terms-hero-1-@2x-1.jpg"
     },
     {
@@ -80,9 +80,21 @@
     },
     {
       "id": 14,
-      "name": "Kitty World",
-      "email": "kittyw@gmail.com",
+      "name": "Daily Kitty",
+      "email": "dkitty@gmail.com",
       "profileURL": "https://www.thehappycatsite.com/wp-content/uploads/2018/05/do-cats-smile-header.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Bob Bobberson",
+      "email": "bobb@gmail.com",
+      "profileURL": "https://www.seekpng.com/png/detail/911-9113130_rupaul-kevin-bob-minion.png"
+    },
+    {
+      "id": 16,
+      "name": "DinnerSaver",
+      "email": "dinners@gmail.com",
+      "profileURL": "https://static.onecms.io/wp-content/uploads/sites/9/2021/06/03/lunchbox-moments-XL-BLOG0621.jpg"
     }
   ],
   "posts": [
@@ -93,7 +105,7 @@
       "time": "8/27/2021 12:59:46 AM",
       "subject": "travel",
       "caption": "Our mission is to create products, videos, and resources that have a big impact on travelers and a positive impact on our world.",
-      "source": "https://images.pexels.com"
+      "source": "https://www.travelocity.com/"
     },
     {
       "id": 2,
@@ -111,7 +123,7 @@
       "time": "8/27/2019 2:59:46 AM",
       "subject": "travel",
       "caption": "Our mission is to create products, videos, and resources that have a big impact on travelers and a positive impact on our world.",
-      "source": "https://images.pexels.com"
+      "source": "https://www.travelocity.com/"
     },
     {
       "id": 4,
@@ -312,13 +324,13 @@
       "source": "https://www.gannett-cdn.com"
     },
     {
+      "id": 26,
       "userId": 9,
       "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/domestic-cat-lies-in-a-basket-with-a-knitted-royalty-free-image-1592337336.jpg",
-      "time": "Thu Sep 02 2021 15:30:34",
-      "caption": "Cats derive pleasure, safety, and comfort from their relationships with humans. However, all cats express their happiness with their human companions differently. Long story short? Cats have distinct personalities, just like people.",
+      "time": "Sat Sep 11 2021",
+      "caption": "Cats derive pleasure, safety, and comfort from their relationships with humans. However, all cats express their happiness with their human companions differently. Long story short? Cats have distinct personalities, just like people......",
       "subject": "pet",
-      "source": "https://hips.hearstapps.com",
-      "id": 26
+      "source": "https://hips.hearstapps.com"
     },
     {
       "userId": 5,
@@ -348,35 +360,38 @@
       "id": 29
     },
     {
-      "userId": 9,
-      "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/domestic-cat-lies-in-a-basket-with-a-knitted-royalty-free-image-1592337336.jpg",
-      "time": "Wed Sep 08 2021",
-      "caption": "Cats derive pleasure, safety, and comfort from their relationships with humans. However, all cats express their happiness with their human companions differently. Long story short? Cats have distinct personalities, just like people...",
-      "subject": "pet",
-      "source": "https://hips.hearstapps.com",
+      "userId": 16,
+      "imageURL": "https://www.carolynscooking.com/wp-content/uploads/2021/01/Poke-Bowl-18-2.jpg",
+      "time": "Sat Sep 11 2021",
+      "caption": "Fresh salmon and tuna over cauliflower rice with a delicious sauce and all the fixins—so perfect! These poke bowls will be your new favorite dinner!",
+      "subject": "food",
+      "source": "https://www.carolynscooking.com/whole30-poke-bowls/",
       "id": 30
+    },
+    {
+      "userId": 9,
+      "imageURL": "https://i.pinimg.com/originals/18/84/30/188430835daa63a3e2eea43bbeb7ed1f.jpg",
+      "time": "Sat Sep 11 2021",
+      "caption": "If you’re looking for a cat to call your own and you’re interested in a breed that is generally known for its laid-back nature, check out the following breeds: ......",
+      "subject": "pet cat",
+      "source": "https://www.petfinder.com/cat-breeds/",
+      "id": 31
+    },
+    {
+      "id": 32,
+      "userId": 9,
+      "imageURL": "https://ae01.alicdn.com/kf/HTB1kfy9djrguuRjy0Feq6xcbFXaA/Cute-Cat-Soft-Cave-Bed-Funny-Mice-Shape-Kitten-House-With-Two-Playing-Ball-Toys-Warm.jpg_Q90.jpg_.webp",
+      "time": "Wed Sep 15 2021",
+      "caption": "Checkout this cute cat bed I got  for my cat's  birthday! It's super cozy and my cat absolutely loves it...!!!",
+      "subject": "pet cat",
+      "source": "https://www.aliexpress.com/item/32919552183.html"
     }
   ],
   "favorites": [
     {
-      "id": 1,
-      "userId": 9,
-      "postId": 13
-    },
-    {
       "userId": 9,
       "postId": 3,
       "id": 3
-    },
-    {
-      "userId": 9,
-      "postId": 14,
-      "id": 5
-    },
-    {
-      "userId": 9,
-      "postId": 26,
-      "id": 6
     },
     {
       "userId": 9,
@@ -390,21 +405,31 @@
     },
     {
       "userId": 9,
-      "postId": 27,
-      "id": 11
+      "postId": 9,
+      "id": 12
     },
     {
       "userId": 9,
-      "postId": 9,
-      "id": 12
+      "postId": 27,
+      "id": 13
+    },
+    {
+      "userId": 9,
+      "postId": 14,
+      "id": 14
+    },
+    {
+      "userId": 9,
+      "postId": 30,
+      "id": 15
+    },
+    {
+      "userId": 9,
+      "postId": 18,
+      "id": 16
     }
   ],
   "friends": [
-    {
-      "userId": 12,
-      "currentUserId": 9,
-      "id": 4
-    },
     {
       "userId": 2,
       "currentUserId": 9,
@@ -416,21 +441,31 @@
       "id": 6
     },
     {
-      "userId": 5,
-      "currentUserId": 9,
-      "id": 8
-    },
-    {
       "userId": 3,
       "currentUserId": 9,
       "id": 9
+    },
+    {
+      "userId": 5,
+      "currentUserId": 9,
+      "id": 10
+    },
+    {
+      "userId": 16,
+      "currentUserId": 9,
+      "id": 11
+    },
+    {
+      "userId": 14,
+      "currentUserId": 9,
+      "id": 12
     }
   ],
   "comments": [
     {
       "id": 1,
       "postId": 27,
-      "userId": 4,
+      "userId": 15,
       "time": "Thu Sep 02 2021 17:35:04",
       "content": "I made this for my kids, who are usually sooooooo picky. Seriously, the younger one only eats PB&J and the oldest only eats chicken nuggets. I know, I know, it's not a healthy diet, but what am I to do? I've tried sneaking vegetables into the nuggets and the PB&J sandwich, but the kids caught on and they threw the food in the toilet, which of course clogged the toilet and caused it to overflow, and all this happened while my husband was out of town again, so ... sorry, where was I going with this? Oh yeah, so the chicken soup ...",
       "replyInput": false
@@ -438,7 +473,7 @@
     {
       "id": 2,
       "postId": 27,
-      "userId": 7,
+      "userId": 4,
       "time": "Thu Sep 04 2021 25:35:04",
       "content": "Apparently you just freeze the stuff. Oh but you need a tray. That's how they get ya. ",
       "replyInput": false
@@ -457,14 +492,14 @@
       "userId": 10,
       "time": "Thu Sep 06 2021 7:35:04",
       "content": "I feel sorry for gamers trying to build a decent rig this year, a mid range GPU alone now costs more than the whole rig I built in May 2020 with a mid range GPU.",
-      "replyInput": true
+      "replyInput": false
     },
     {
       "id": 5,
       "postId": 26,
       "userId": 14,
       "time": "Thu Sep 06 2021 7:35:04",
-      "content": "Cats are literally my favorite on this",
+      "content": "Cats are literally my favorite in this world",
       "replyInput": false
     }
   ],
@@ -477,18 +512,97 @@
       "content": "That's pretty funny"
     },
     {
-      "commentId": 1,
-      "userId": 9,
-      "time": "Tue Sep 07 2021 18:50:35",
-      "content": "😅😂",
-      "id": 2
-    },
-    {
       "commentId": 4,
       "userId": 9,
       "time": "Wed Sep 08 2021 10:13:43",
       "content": "indeed!",
       "id": 3
+    },
+    {
+      "commentId": 1,
+      "userId": 9,
+      "time": "Wed Sep 15 2021 21:50:33",
+      "content": "lol",
+      "id": 4
+    }
+  ],
+  "DMs": [
+    {
+      "id": 1,
+      "userId": 1,
+      "currentUserId": 9,
+      "time": "Thu Sep 10 2021 12:35:04",
+      "content": "👋 Interested in winning a $500 gift card?"
+    },
+    {
+      "id": 2,
+      "userId": 14,
+      "currentUserId": 9,
+      "time": "Thu Sep 12 2021 12:35:04",
+      "content": "Hi！Come on check out our latest posts!"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "currentUserId": 9,
+      "time": "Thu Sep 13 2021 11:05:04",
+      "content": "Selected fall home decor ideas are here for you!"
+    },
+    {
+      "id": 4,
+      "userId": 9,
+      "currentUserId": 14,
+      "time": "Thu Sep 12 2021 12:36:20",
+      "content": "Love your cat posts! Please feature my cat too!"
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "currentUserId": 9,
+      "time": "Thu Sep 10 2021 12:36:04",
+      "content": "Please visit out website for details!"
+    },
+    {
+      "id": 6,
+      "userId": 9,
+      "currentUserId": 2,
+      "time": "Thu Sep 14 2021 12:35:30",
+      "content": "Thanks!"
+    },
+    {
+      "id": 7,
+      "userId": 2,
+      "currentUserId": 9,
+      "time": "Thu Sep 14 2021 12:36:50",
+      "content": "You're welcome!"
+    },
+    {
+      "id": 8,
+      "userId": 14,
+      "currentUserId": 9,
+      "time": "Thu Sep 12 2021 12:36:50",
+      "content": "Of course! Just @ our account next time you make a post!"
+    },
+    {
+      "userId": 9,
+      "currentUserId": 11,
+      "time": "Sat Sep 18 2021 12:32:39",
+      "content": "hi",
+      "id": 9
+    },
+    {
+      "userId": 9,
+      "currentUserId": 13,
+      "time": "Sat Sep 18 2021 12:45:57",
+      "content": "hi",
+      "id": 10
+    },
+    {
+      "userId": 13,
+      "currentUserId": 9,
+      "time": "Sat Sep 18 2021 12:50:57",
+      "content": "Hi, anything I can help you?",
+      "id": 10
     }
   ]
 }

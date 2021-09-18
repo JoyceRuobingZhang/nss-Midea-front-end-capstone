@@ -14,6 +14,7 @@ import { PostDetail } from "./post/PostDetail"
 import { CustomerService } from "./message/customerService"
 import { Me } from "./me/Me"
 import { CreatePost } from "./me/CreatePost"
+import { DMProvider } from "./message/DMProvider"
 
 
 
@@ -27,6 +28,7 @@ export const ApplicationViews = () => {
         <HomeProvider >
         <CommentProvider>
         <CommentResponseProvider>
+        <DMProvider>
             <Route exact path="/">
                 <Navbar />
                 <HomeList />
@@ -59,7 +61,7 @@ export const ApplicationViews = () => {
                 
             </Route>   
 
-        
+        </DMProvider>
         </CommentResponseProvider>
         </CommentProvider>
         </HomeProvider>

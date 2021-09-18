@@ -7,12 +7,12 @@ body {
 .navbar {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     padding: 2rem;
     border-radius: 1rem;
-    opacity: 0.6;
+    opacity: 0.8;
     background-image: url(./banner5.png);
-    background-size: 43%;
+    background-size: 45%;
     font-family: 'EB Garamond', serif;
 }
 
@@ -48,13 +48,16 @@ body {
     text-decoration: none;
 }
 
+.create_icon {
+    width: 2.3rem;
+}
+
 .search_input {
     width: 2.5rem;
     height: 2.5rem;
-   border-radius: 50%;
-   font-size: large;
-   background: none;
-
+    border-radius: 50%;
+    font-size: large;
+    background: none;
 }
 
 .search_input:focus{
@@ -74,4 +77,8 @@ body {
 
 ul {
     list-style-type: none;
+}
+
+.notification {
+    position: relative;
 }

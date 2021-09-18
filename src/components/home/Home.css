@@ -12,6 +12,42 @@ body {
   --card_large: 60;
 }
 
+.filters {
+  margin: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.filter_icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  align-self: center;
+}
+
+.filter_keyword {
+ color: rgb(65, 129, 167);
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  font-family: 'EB Garamond', serif;
+  align-self: center;
+  transition: all 0.5s ease-out;
+}
+
+.filter_keyword:hover {
+  background-color: rgb(217, 229, 243);
+  border-radius: 0.5rem;
+  color: rgb(65, 129, 167);
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  font-family: 'EB Garamond', serif;
+  align-self: center;
+}
+
+.all {
+  background-color: rgb(225, 229, 233);
+  border-radius: 0.5rem;
+}
+
 .home-grid-container {
   margin: 0;
   padding: 0;
@@ -51,6 +87,8 @@ body {
   height: 100%;
   object-fit:cover;
   border-radius: 1rem;
+  transition: all 0.3s ease-out;
+ 
 }
 
 .card-image:hover {
@@ -72,6 +110,7 @@ body {
   transform: translate(-50%, -50%);
   opacity: 0;
   font-family: 'Hina Mincho', serif;
+  transition: all 0.3s ease-out;
 }
 
 .image-caption:hover {
