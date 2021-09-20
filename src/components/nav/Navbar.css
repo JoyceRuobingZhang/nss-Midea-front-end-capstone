@@ -12,7 +12,7 @@ body {
     border-radius: 1rem;
     opacity: 0.8;
     background-image: url(./banner5.png);
-    background-size: 45%;
+    background-repeat:no-repeat;
     font-family: 'EB Garamond', serif;
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 .logo {
-    width: 5rem;
+    width: 10rem;
     align-self: center;
     display: flex;
     margin: auto;
@@ -30,9 +30,15 @@ body {
 
 .nav-item {
     text-align: center;
-    font-size: 1.8rem;
-    margin-right: 5rem;
+    font-size: 1.5rem;
+    margin-right: 3.75rem;
     align-self: center;
+}
+
+.logout {
+    font-size: 1.25rem;
+    font-family: 'EB Garamond', serif;
+    color: rgb(65, 129, 167);
 }
 
 .nav-item:hover {
@@ -49,7 +55,10 @@ body {
 }
 
 .create_icon {
-    width: 2.3rem;
+    width: 2rem;
+    height: 2rem;
+    opacity: 0.85;
+    filter:grayscale(80%);
 }
 
 .search_input {
@@ -79,6 +88,3 @@ ul {
     list-style-type: none;
 }
 
-.notification {
-    position: relative;
-}

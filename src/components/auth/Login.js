@@ -16,17 +16,25 @@ export const Login = () => {
     }
 
 
-    const existingUserCheck = () => {
+    const existingUserEmailCheck = () => {
         // If your json-server URL is different, please change it below!
         return fetch(`http://localhost:8000/users?email=${loginUser.email}`)
             .then(res => res.json())
             .then(user => user.length ? user[0] : false)
     }
 
+    const existingUserPasswordCheck = () => {
+        // If your json-server URL is different, please change it below!
+        return fetch(`http://localhost:8000/users?password=${loginUser.password}`)
+            .then(res => res.json())
+            .then(user => user.length ? user[0] : false)
+    }
+
+
     const handleLogin = (e) => {
         e.preventDefault()
 
-        existingUserCheck()
+        existingUserEmailCheck() && existingUserPasswordCheck()
             .then(exists => {
                 if (exists) {
                     // The user id is saved under the key nutshell_user in session Storage. Change below if needed!
@@ -47,16 +55,25 @@ export const Login = () => {
             </dialog>
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Midea</h1>
-                    <h4>Please sign in</h4>
-                    <fieldset>
-                        <label htmlFor="inputEmail"> Email address </label>
+                    <p className="login">Log In</p>
+                    <p className="login_note">login here using your username and password</p>
+                    <fieldset className="login_info">
+                        <label htmlFor="inputEmail" className="label_text"> Email address: </label>
                         <input type="email"
                             id="email"
                             className="form-control"
                             placeholder="Email address"
                             required autoFocus
                             value={loginUser.email}
+                            onChange={handleInputChange} />
+
+                        <label htmlFor="inputPassword" className="label_text"> Password: </label>
+                        <input type="password"
+                            id="password"
+                            className="form-control"
+                            placeholder="password"
+                            required autoFocus
+                            value={loginUser.password}
                             onChange={handleInputChange} />
                     </fieldset>
                     <fieldset>
@@ -67,7 +84,7 @@ export const Login = () => {
                 </form>
             </section>
             <section className="link--register">
-                <Link to="/register" className="register">Register for an account</Link>
+                <Link to="/register" className="register_note">Register for an account</Link>
             </section>
         </main>
         </div>

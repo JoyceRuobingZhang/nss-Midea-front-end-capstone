@@ -6,7 +6,7 @@ import Send from "./send..png"
 
 export const DM = (props)  => {
 
-    const { DMs, getDMs, addDM, DMSearchTerms, setDMSearchTerms } = useContext(DMContext)
+    const { DMs, getDMs, addDM, DMSearchTerms, setDMSearchTerms, markAsRead } = useContext(DMContext)
     const { users, getUsers } = useContext(UserContext)
     const [ currentUserDMList, setCurrentUserDMList ] = useState([])
     const [ filteredDMs, setFilteredDMs ] = useState([])
@@ -15,7 +15,8 @@ export const DM = (props)  => {
     const [ DM, setDM ] = useState({})
 
     // for the cover DMs
-    const [latestUserDMs, setLatestUserDMs] = useState([])
+    const [ latestUserDMs, setLatestUserDMs ] = useState([])
+
 
     useEffect(() => {getDMs()}, [])
     useEffect(() => {getUsers()}, [])
@@ -40,12 +41,13 @@ export const DM = (props)  => {
         }
     }, [DMSearchTerms, DMs])
 
+
     useEffect(() => {
         const currentUserId = sessionStorage.getItem("midea_user")
         const currentUserDMList = filteredDMs.filter(DM => DM.currentUserId === parseInt(currentUserId))
 
-        //🚩🚩🚩 reduce to a new array of the latest DMs from different users
-        // to display the DM cover page
+        /*🔴🔴🔴 reduce to a new array of the latest DMs from different users
+                to display the DM cover page    */
         const coverDMs =  currentUserDMList.reduce( (userDMs, DM) => {
             const existingUserDM = userDMs.find(dm => dm.userId === DM.userId)
             if( !existingUserDM ) {
@@ -58,11 +60,13 @@ export const DM = (props)  => {
             }
             return userDMs
         }, [])
-        setLatestUserDMs(coverDMs)
 
-        currentUserDMList.sort(function (a, b) {
-            return  new Date(a.time) > new Date(b.time) ? 1 : -1 
+        // sort the cover DMs from latest to oldest
+        coverDMs.sort(function (a, b) {
+            return  new Date(a.time) < new Date(b.time) ? 1 : -1 
         })
+
+        setLatestUserDMs(coverDMs)
 
         setCurrentUserDMList(currentUserDMList)
 
@@ -70,7 +74,7 @@ export const DM = (props)  => {
 
 
 
-    // 📮📮📮 private chat page
+    // 🔴🔴🔴 private chat page
     const PrivateMessage = (props) => {
         const privateUserMessages = currentUserDMList.filter(DM => DM.userId === props.userId)
 
@@ -96,7 +100,8 @@ export const DM = (props)  => {
                 userId: parseInt(currentUserId),
                 currentUserId: props.userId,
                 time: Date(Date.now()).slice(0,24),
-                content: DM.content
+                content: DM.content,
+                isRead: false
             }
             addDM(DMObj)
             setDM({})
@@ -141,7 +146,7 @@ export const DM = (props)  => {
         )
     }
 
-    // DM BOX returned result
+    // 🔴🔴🔴 DM BOX returned result
     if(filteredUsers.length > 0){
         return (
           <div className="DM_box">
@@ -194,11 +199,20 @@ export const DM = (props)  => {
                         if(openPrivateChat === ""){
                             return (
                                 <li className="DM">
-                                    <img  src={DM.user.profileURL} className="DM_profile" /> 
-                                    <button className="DM_info" onClick={() => {setOpenPrivateChat(DM.user.id)}}>
+                                    <a class="notification">
+                                        <img  src={DM.user.profileURL} className="DM_profile" /> 
+                                        <span class="badge">
+                                        { currentUserDMList.filter(dm => dm.userId === DM.user.id ).filter(dm => dm.isRead === false).length > 0 ?
+                                          currentUserDMList.filter(dm => dm.userId === DM.user.id ).filter(dm => dm.isRead === false).length:
+                                          "" }
+                                        </span>
+                                    </a>
+                                    <button className="DM_info" onClick={() => {
+                                        setOpenPrivateChat(DM.user.id)
+                                        currentUserDMList.filter(dm => dm.userId === DM.user.id ).map(dm => {markAsRead(dm.id)})
+                                    }}>
                                             <div className="DM_user_name">{DM.user.name}</div>
                                             <small className="DM_preview">{DM.content.slice(0,35)}... </small>
-                                            {/* <small>{DM.time}</small> */}
                                     </button>
                                 </li> )
 
@@ -214,8 +228,7 @@ export const DM = (props)  => {
         ) }
 }
 
-// props
-// <PrivateMessage userId={userId}>  
+// props:  <PrivateMessage userId={userId}>  
 
 
   

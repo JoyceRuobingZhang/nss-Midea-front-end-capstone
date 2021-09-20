@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { useHistory } from "react-router-dom";
-
-import "./Login.css"
+import "./Register.css"
 
 export const Register = () => {
 
@@ -57,29 +56,33 @@ export const Register = () => {
     }
 
     return (
-        <main style={{ textAlign: "center" }}>
+        <main style={{ textAlign: "center" }} className="register_page">
 
             <dialog className="dialog dialog--password" open={conflictDialog}>
                 <div>Account with that email address already exists</div>
                 <button className="button--close" onClick={e => setConflictDialog(false)}>Close</button>
             </dialog>
 
-            <form className="form--login" onSubmit={handleRegister}>
-                <h1 className="h3 mb-3 font-weight-normal">Please Register for Application Name</h1>
+            <form className="form--register" onSubmit={handleRegister}>
+                <p className="register_title"> Register </p>
                 <fieldset>
-                    <label htmlFor="firstName"> First Name </label>
+                    <label htmlFor="firstName"> First Name: </label>
                     <input type="text" name="firstName" id="firstName" className="form-control" placeholder="First name" required autoFocus value={registerUser.firstName} onChange={handleInputChange} />
                 </fieldset>
                 <fieldset>
-                    <label htmlFor="lastName"> Last Name </label>
+                    <label htmlFor="lastName"> Last Name: </label>
                     <input type="text" name="lastName" id="lastName" className="form-control" placeholder="Last name" required value={registerUser.lastName} onChange={handleInputChange} />
                 </fieldset>
                 <fieldset>
-                    <label htmlFor="inputEmail"> Email address </label>
+                    <label htmlFor="inputEmail"> Email address: </label>
                     <input type="email" name="email" id="email" className="form-control" placeholder="Email address" required value={registerUser.email} onChange={handleInputChange} />
                 </fieldset>
                 <fieldset>
-                    <button type="submit"> Sign in </button>
+                    <label htmlFor="inputPassword"> Password: </label>
+                    <input type="password" name="password" id="password" className="form-control" placeholder="password" required value={registerUser.password} onChange={handleInputChange} />
+                </fieldset>
+                <fieldset>
+                    <button type="submit" className="sign_in"> Sign in </button>
                 </fieldset>
             </form>
         </main>

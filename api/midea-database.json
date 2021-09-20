@@ -4,97 +4,120 @@
       "id": 1,
       "name": "World Travel",
       "email": "worldt@gmail.com",
+      "password": "123456",
       "profileURL": "https://i.pinimg.com/736x/e2/4a/52/e24a521d4c48ec93d4c17b5b6450d50d.jpg"
     },
     {
       "id": 2,
-      "name": "Cozy home",
+      "name": "Cozy Home",
       "email": "pebbett0@nifty.com",
+      "password": "123456",
       "profileURL": "https://www.build-review.com/wp-content/uploads/2020/09/interior-design.jpg"
     },
     {
       "id": 3,
       "name": "PC Passionate",
       "email": "pcp@gmail.com",
+      "password": "123456",
       "profileURL": "https://i.pinimg.com/originals/53/1c/f8/531cf88ea9dd26478e62ff9cab3e676b.jpg"
     },
     {
       "id": 4,
-      "name": "Sutherlan Gabby",
+      "name": "Jimmy Goodman",
       "email": "sgabby2@dedecms.com",
+      "password": "123456",
       "profileURL": "https://i.pinimg.com/originals/c7/d1/5e/c7d15eb0d598abfcf39af2d423621603.png"
     },
     {
       "id": 5,
       "name": "Spiced Up",
       "email": "spiceup@yahoo.com",
+      "password": "123456",
       "profileURL": "https://www.gffoodservice.com.au/content/uploads/2019/08/culinary_terms-hero-1-@2x-1.jpg"
     },
     {
       "id": 6,
-      "name": "Royce Seine",
+      "name": "Saul Goodman",
       "email": "rseineb@liveinternet.ru",
+      "password": "123456",
       "profileURL": "https://i.pinimg.com/236x/16/fe/30/16fe303a5df405e2922cadd8f12cdf59.jpg"
     },
     {
       "id": 7,
       "name": "Best Cars",
       "email": "bestcars@twitter.com",
+      "password": "123456",
       "profileURL": "https://cdn.wallpapersafari.com/34/66/FByhnW.jpg"
     },
     {
       "id": 8,
       "name": "Taste of Home",
       "email": "elegierv@twitter.com",
+      "password": "123456",
       "profileURL": "https://insider.xamk.fi/wp-content/uploads/2019/10/unnamed.jpg"
     },
     {
       "id": 9,
       "name": "Joyce Zhang",
       "email": "joyce@nss.com",
+      "password": "979797",
       "profileURL": "https://avatars.githubusercontent.com/u/81496340?v=4"
     },
     {
       "id": 10,
       "name": "Foodie's world",
       "email": "foodie@food.com",
+      "password": "123456",
       "profileURL": "https://ddxcu89oqzgqh.cloudfront.net/uploads/account/avatar/5ae251ff441ba51fa800156c/37815424_275489796386365_4887476348223750144_n.jpg"
     },
     {
       "id": 11,
       "name": "Wedding Planing",
       "email": "grassh@twitter.com",
+      "password": "123456",
       "profileURL": "https://www.brides.com/thmb/3huypYOrQOzsLvxwx6R3RsuLDFk=/3000x2197/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__brides__public__brides-services__production__2018__11__20__5bf44542c9b3962dfaf110e7_15.20A20Day20in20May-c9a8fb20c2324c619b5b9538fa609cbd.jpg"
     },
     {
       "id": 12,
       "name": "Car-nival",
       "email": "carnival@gmail.com",
+      "password": "123456",
       "profileURL": "https://i.pinimg.com/474x/85/6d/fd/856dfd35e665d584cb068be1044fc8a5.jpg"
     },
     {
       "id": 13,
       "name": "MaxBuilding",
       "email": "maxb@gmail.com",
+      "password": "123456",
       "profileURL": "https://5.imimg.com/data5/RO/RA/JE/SELLER-3866941/gaming-desktop-pc-500x500.jpg"
     },
     {
       "id": 14,
       "name": "Daily Kitty",
       "email": "dkitty@gmail.com",
+      "password": "123456",
       "profileURL": "https://www.thehappycatsite.com/wp-content/uploads/2018/05/do-cats-smile-header.jpg"
     },
     {
       "id": 15,
       "name": "Bob Bobberson",
       "email": "bobb@gmail.com",
+      "password": "123456",
       "profileURL": "https://www.seekpng.com/png/detail/911-9113130_rupaul-kevin-bob-minion.png"
     },
     {
       "id": 16,
       "name": "DinnerSaver",
       "email": "dinners@gmail.com",
+      "password": "123456",
       "profileURL": "https://static.onecms.io/wp-content/uploads/sites/9/2021/06/03/lunchbox-moments-XL-BLOG0621.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Adventurer",
+      "email": "adventurer@gmail.com",
+      "password": "123456",
+      "profileURL": "https://offtracktravel.ca/wp-content/uploads/2020/02/adventure-call-to-action.jpg"
     }
   ],
   "posts": [
@@ -327,7 +350,7 @@
       "id": 26,
       "userId": 9,
       "imageURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/domestic-cat-lies-in-a-basket-with-a-knitted-royalty-free-image-1592337336.jpg",
-      "time": "Sat Sep 11 2021",
+      "time": "Sat Sep 18 2021",
       "caption": "Cats derive pleasure, safety, and comfort from their relationships with humans. However, all cats express their happiness with their human companions differently. Long story short? Cats have distinct personalities, just like people......",
       "subject": "pet",
       "source": "https://hips.hearstapps.com"
@@ -370,7 +393,7 @@
     },
     {
       "userId": 9,
-      "imageURL": "https://i.pinimg.com/originals/18/84/30/188430835daa63a3e2eea43bbeb7ed1f.jpg",
+      "imageURL": "https://preview.pixlr.com/images/800wm/1330/1/1330100565.jpg",
       "time": "Sat Sep 11 2021",
       "caption": "If you’re looking for a cat to call your own and you’re interested in a breed that is generally known for its laid-back nature, check out the following breeds: ......",
       "subject": "pet cat",
@@ -385,6 +408,33 @@
       "caption": "Checkout this cute cat bed I got  for my cat's  birthday! It's super cozy and my cat absolutely loves it...!!!",
       "subject": "pet cat",
       "source": "https://www.aliexpress.com/item/32919552183.html"
+    },
+    {
+      "id": 33,
+      "userId": 17,
+      "imageURL": "https://www.telegraph.co.uk/content/dam/Travel/2018/December/nepal.jpg?imwidth=680",
+      "time": "Wed Sep 18 2021",
+      "caption": "People like adventure in their lives. Research shows that a chance to break away from the normal rhythms of daily life reduces stress and improves health and well-being. And studies show that play is as important in adult lives as it is during childhood...",
+      "subject": "travel",
+      "source": "https://www.usnews.com/news/best-countries/adventure-rankings"
+    },
+    {
+      "id": 34,
+      "userId": 17,
+      "imageURL": "https://destinationdeluxe.com/wp-content/uploads/2021/06/Adventure-Activities-Destination-Deluxe-570x381.jpg",
+      "time": "Wed Sep 18 2021",
+      "caption": "Sunrise Ballooning over Cappadocia, Turkey. Experience adventure, admire beauty, witness exploration, snap photos of the scenery, and so much more – all from a hot air balloon at sunrise on a tour in Cappadocia, Turkey...",
+      "subject": "travel",
+      "source": "https://www.usnews.com/news/best-countries/adventure-rankings"
+    },
+    {
+      "id": 35,
+      "userId": 1,
+      "imageURL": "https://joinfull.com/uploads/cms/images/highlights-venice-and-private-gondola-ride-day-trip-from-ljubljana-11.jpg",
+      "time": "Wed Sep 18 2021",
+      "caption": "View of the Rio Marin Canal with boats and gondolas from the Ponte de la Bergami in Venice, Italy. Venice is a popular tourist destination of Europe...",
+      "subject": "travel",
+      "source": "https://www.usnews.com/news/best-countries/adventure-rankings"
     }
   ],
   "favorites": [
@@ -410,11 +460,6 @@
     },
     {
       "userId": 9,
-      "postId": 27,
-      "id": 13
-    },
-    {
-      "userId": 9,
       "postId": 14,
       "id": 14
     },
@@ -427,14 +472,14 @@
       "userId": 9,
       "postId": 18,
       "id": 16
+    },
+    {
+      "userId": 9,
+      "postId": 27,
+      "id": 17
     }
   ],
   "friends": [
-    {
-      "userId": 2,
-      "currentUserId": 9,
-      "id": 5
-    },
     {
       "userId": 2,
       "currentUserId": 1,
@@ -446,11 +491,6 @@
       "id": 9
     },
     {
-      "userId": 5,
-      "currentUserId": 9,
-      "id": 10
-    },
-    {
       "userId": 16,
       "currentUserId": 9,
       "id": 11
@@ -459,6 +499,16 @@
       "userId": 14,
       "currentUserId": 9,
       "id": 12
+    },
+    {
+      "userId": 5,
+      "currentUserId": 9,
+      "id": 13
+    },
+    {
+      "userId": 8,
+      "currentUserId": 9,
+      "id": 14
     }
   ],
   "comments": [
@@ -517,13 +567,6 @@
       "time": "Wed Sep 08 2021 10:13:43",
       "content": "indeed!",
       "id": 3
-    },
-    {
-      "commentId": 1,
-      "userId": 9,
-      "time": "Wed Sep 15 2021 21:50:33",
-      "content": "lol",
-      "id": 4
     }
   ],
   "DMs": [
@@ -532,77 +575,88 @@
       "userId": 1,
       "currentUserId": 9,
       "time": "Thu Sep 10 2021 12:35:04",
-      "content": "👋 Interested in winning a $500 gift card?"
+      "content": "👋 Interested in winning a $500 gift card?",
+      "isRead": true
     },
     {
       "id": 2,
       "userId": 14,
       "currentUserId": 9,
       "time": "Thu Sep 12 2021 12:35:04",
-      "content": "Hi！Come on check out our latest posts!"
+      "content": "Hi！Come on check out our latest posts!",
+      "isRead": true
     },
     {
       "id": 3,
       "userId": 2,
       "currentUserId": 9,
       "time": "Thu Sep 13 2021 11:05:04",
-      "content": "Selected fall home decor ideas are here for you!"
+      "content": "Selected fall home decor ideas are here for you!",
+      "isRead": true
     },
     {
       "id": 4,
       "userId": 9,
       "currentUserId": 14,
       "time": "Thu Sep 12 2021 12:36:20",
-      "content": "Love your cat posts! Please feature my cat too!"
+      "content": "Love your cat posts! Please feature my cat too!",
+      "isRead": true
     },
     {
       "id": 5,
       "userId": 1,
       "currentUserId": 9,
       "time": "Thu Sep 10 2021 12:36:04",
-      "content": "Please visit out website for details!"
+      "content": "Please visit out website for details!",
+      "isRead": true
     },
     {
       "id": 6,
       "userId": 9,
       "currentUserId": 2,
       "time": "Thu Sep 14 2021 12:35:30",
-      "content": "Thanks!"
-    },
-    {
-      "id": 7,
-      "userId": 2,
-      "currentUserId": 9,
-      "time": "Thu Sep 14 2021 12:36:50",
-      "content": "You're welcome!"
-    },
-    {
-      "id": 8,
-      "userId": 14,
-      "currentUserId": 9,
-      "time": "Thu Sep 12 2021 12:36:50",
-      "content": "Of course! Just @ our account next time you make a post!"
-    },
-    {
-      "userId": 9,
-      "currentUserId": 11,
-      "time": "Sat Sep 18 2021 12:32:39",
-      "content": "hi",
-      "id": 9
-    },
-    {
-      "userId": 9,
-      "currentUserId": 13,
-      "time": "Sat Sep 18 2021 12:45:57",
-      "content": "hi",
-      "id": 10
+      "content": "Thanks!",
+      "isRead": true
     },
     {
       "userId": 13,
       "currentUserId": 9,
       "time": "Sat Sep 18 2021 12:50:57",
       "content": "Hi, anything I can help you?",
-      "id": 10
+      "id": 7,
+      "isRead": true
+    },
+    {
+      "userId": 9,
+      "currentUserId": 13,
+      "time": "Sat Sep 18 2021 12:45:57",
+      "content": "hi",
+      "id": 8,
+      "isRead": true
+    },
+    {
+      "id": 9,
+      "userId": 2,
+      "currentUserId": 9,
+      "time": "Thu Sep 14 2021 12:36:50",
+      "content": "You're welcome!",
+      "isRead": true
+    },
+    {
+      "id": 10,
+      "userId": 14,
+      "currentUserId": 9,
+      "time": "Thu Sep 12 2021 12:36:50",
+      "content": "Of course! Just @ our account next time you make a post!",
+      "isRead": true
+    },
+    {
+      "id": 11,
+      "userId": 2,
+      "currentUserId": 1,
+      "time": "Thu Sep 12 2021 12:36:50",
+      "content": "Hi！",
+      "isRead": true
     }
   ]
 }

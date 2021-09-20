@@ -1,0 +1,44 @@
+.register_page {
+background-image: url(../nav/logo\ Midea.png);
+  background-size: 40%;
+  opacity: 0.85;
+  background-position-x:80%;
+  background-repeat: no-repeat;
+  background-blend-mode:soft-light;
+  height: 800px;
+  margin-top: 10%;
+}
+
+.form--register {
+    margin: 5% 50% 20% 5%;
+}
+
+.register_title {
+  color:cornflowerblue;
+  font-family: 'EB Garamond', serif;
+  font-weight:bold;
+  font-size: 2rem;
+  text-align: left;
+  margin: 5% 50% 0 25%;
+}
+
+fieldset {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    border: none;
+    min-inline-size: min-content;
+}
+
+fieldset {
+    margin: 1rem;
+}
+
+.sign_in {
+    background-color: rgb(139, 172, 235);
+    padding: 1rem;
+    border-radius: 1rem;
+}

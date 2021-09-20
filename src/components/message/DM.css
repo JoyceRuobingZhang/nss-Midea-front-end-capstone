@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
 .DM_box {
     position: fixed;
     margin: 1rem;
-    top: 20%;
+    top: 32%;
     right: 0;
     background-color: rgb(244, 246, 247);
-    width: 300px;
+    width: 320px;
     z-index: 999;
     border-radius: 1rem;
 }
@@ -33,9 +35,11 @@
 }
 
 .inbox {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     text-align: center;
     align-self: center;
+    font-family: 'EB Garamond', serif;
+    color: rgb(73, 72, 72);
 }
 
 .close_DM {
@@ -52,8 +56,8 @@
 }
 
 .DM_profile {
-    width: 3rem;
-    height: 3rem;
+    width: 3.25rem;
+    height: 3.25rem;
     border-radius: 50%;
     margin: 0.5rem;
 }
@@ -62,6 +66,8 @@
     display: flex;
     flex-direction: column;
     align-self: center;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.25rem;
 }
 
 .DM_preview {
@@ -70,6 +76,7 @@
     text-align: left;
     color:rgb(91, 91, 92);
     font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .close_DM {
@@ -164,4 +171,23 @@
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
+}
+
+.notification {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    border-radius: 50%;
+  }
+  
+  
+.notification .badge {
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    padding: 0px 6px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    font-size: x-small;
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
 .dialog {
   min-width: 15rem;
   min-height: 5rem;
@@ -8,22 +10,51 @@ body {
 }
 
 .login-body {
-  background-image: url(./react.png);
-  background-size: 20%;
-  background-position-x: center;
+  background-image: url(../nav/logo\ midea.png);
+  background-size: 40%;
+  opacity: 0.85;
+  background-position-x:80%;
   background-repeat: no-repeat;
   background-blend-mode:soft-light;
+  height: 550px;
 }
 
-h1 {
-color:cornflowerblue;
+.container--login {
+  margin: 10% 30% 20% 12%;
+}
+
+.login {
+  color:cornflowerblue;
+  font-family: 'EB Garamond', serif;
+  font-weight:bold;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.login_note {
+  font-family: 'EB Garamond', serif;
+  color:cornflowerblue;
+  font-size: 1.5rem;
+  margin-left: 1rem;
 }
 
 .container--login {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin: 10% 25%;
+}
+
+.label_text {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  height: 2.75rem;
+  width: 15rem;
+  font-size: 1rem;
+  border: 2px solid rgb(200, 222, 241);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
 }
 
 .sign-in {
@@ -32,4 +63,21 @@ color:cornflowerblue;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 1rem;
+  width: 8rem;
+}
+
+fieldset {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    border: none;
+    min-inline-size: min-content;
+}
+
+.login_info {
+  display: flex;
+  flex-direction: column;
 }

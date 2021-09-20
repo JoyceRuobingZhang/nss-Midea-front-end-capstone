@@ -184,7 +184,7 @@
     cursor: pointer;
 }
 
-.favorite_post:hover, .my_posts:hover {
+.favorite_post:hover, .my_post:hover {
     filter: drop-shadow(0 0 0.75rem rgb(147, 164, 221));
 }
 

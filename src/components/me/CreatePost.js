@@ -85,22 +85,23 @@ export const CreatePost = () => {
                     postId?
                     <>
                         <img className="defaultValue_image" src={post.imageURL}/>
-                        <label>Update Image URL:  </label><input type="text" id="imageURL"  placeholder="Enter image URL" 
+                        <label>Update Image URL:   </label>
+                        <input type="text" id="imageURL"  placeholder="Enter image URL"  className="create image_url_input"
                         value={post.imageURL} onChange={handleControlledInputChange} defaultValue={post.imageURL}/>
                     </>:
                     <>
-                        <input type="text" id="imageURL" className="create image" placeholder="Enter image URL" 
+                        <input type="text" id="imageURL" className="create image_url" placeholder="Enter image URL" 
                         value={post.imageURL} onChange={handleControlledInputChange} defaultValue={post.imageURL}/>
                     </>
                 }
             </div>
             <div className="create_post_info">
-                <div className="post_source">
+                <div className="post_source"> Post Source:  
                     <input type="text" id="source" className="create source" placeholder="Enter source link" 
                     value={post.source} onChange={handleControlledInputChange} defaultValue={post.source} />
                 </div>
 
-                <div className="post_subject">
+                <div className="post_subject"> Post Subject:
                     <input type="text" id="subject" className="create subject" placeholder="Enter subject here" 
                     value={post.subject} onChange={handleControlledInputChange} defaultValue={post.subject} />
                 </div>
@@ -110,7 +111,7 @@ export const CreatePost = () => {
                     <h3>{currentUser.name}</h3> 
                 </div>
                 
-                <div className="create_post_caption">
+                <div className="create_post_caption"> Post Caption:
                     <textarea type="text" id="caption" className="create caption" placeholder="Enter post caption" 
                  onChange={handleControlledInputChange} defaultValue={post.caption}  />
                 </div>
