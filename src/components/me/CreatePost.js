@@ -2,7 +2,8 @@ import React, { useContext, useEffect, useState } from "react"
 import { useHistory, useParams } from "react-router-dom"
 import { HomeContext } from "../home/HomeProvider"
 import { UserContext } from "../user/UserProvider"
-// import { UploadImage } from "./UploadImage"
+import { photoStorage } from "./UploadImage"
+import Placeholder from "./placeholder-image.jpg"
 import './CreatePost.css'
 
 export const CreatePost = () => {
@@ -48,13 +49,14 @@ export const CreatePost = () => {
 
     const handleCreatePost = (event) => {
         event.preventDefault() //Prevents the browser from submitting the form
-        if (post.imageURL === "" || post.caption === "" || post.subject === "" || post.source === "") {
-            window.alert("Please add all the information")
-        } else if (postId) {
+        if ( post.caption === "" || post.subject === "" || post.source === "") {
+            window.alert("Please add all the information!")
+        } 
+         else if (postId) {
             const newPost = {
                 id: post.id,
                 userId: parseInt(currentUserId),
-                imageURL: post.imageURL,
+                imageURL: post.imageURL? post.imageURL : uploadedImageUrl,
                 time: Date(Date.now()).slice(0,15),
                 caption: post.caption,
                 subject: post.subject,
@@ -62,19 +64,43 @@ export const CreatePost = () => {
             }
             updatePost(newPost)
              .then(() => history.push(`/post/detail/${post.id}`))
-        } else {
+        } else if ( post.imageURL !== "" || image !== null ) {
             const newPost = {
                 userId: parseInt(currentUserId),
-                imageURL: post.imageURL,
+                imageURL: post.imageURL ? post.imageURL : uploadedImageUrl,
                 time: Date(Date.now()).slice(0,15),
                 caption: post.caption,
                 subject: post.subject,
                 source: post.source
             }
             addToFeed(newPost)
-             .then(() => history.push("/me"))
+             .then(() => history.push(`/post/detail/${post.id}`))
+        } else {
+            window.alert("Please enter the image URL or upload an image!")
         }
     }
+
+    // 🔴🔴🔴 firebase uploading pics
+    const [image, setImage] = useState(null);
+    const [uploadedImageUrl, setUploadedImageUrl] = useState(null);
+  
+    // Handles selecting an image
+    const handleChange = (event) => {
+      if (event.target.files[0]) {
+        setImage(event.target.files[0]);
+      }
+    }
+  
+    // Handles calling the upload image function
+    const handleUpload = () => {
+        if( image != null){
+            photoStorage.upload("images", image).then((downloadUrl) => {
+            // Returns image URL, you will want to add this
+            // to an object in your database
+            // EX: a user if it's a profile picture
+            setUploadedImageUrl(downloadUrl)
+        })
+    }}
     
 
     return (
@@ -84,14 +110,26 @@ export const CreatePost = () => {
                 {
                     postId?
                     <>
-                        <img className="defaultValue_image" src={post.imageURL}/>
-                        <label>Update Image URL:   </label>
-                        <input type="text" id="imageURL"  placeholder="Enter image URL"  className="create image_url_input"
-                        value={post.imageURL} onChange={handleControlledInputChange} defaultValue={post.imageURL}/>
+                        <img className="defaultValue_image" src={uploadedImageUrl? uploadedImageUrl : post.imageURL}/>
+                        <div className="enter_image">
+                            <input type="text" id="imageURL" className="create image_url_input" placeholder="🔗 Enter image URL" 
+                            value={uploadedImageUrl? uploadedImageUrl : post.imageURL} onChange={handleControlledInputChange} defaultValues={uploadedImageUrl? uploadedImageUrl : post.imageURL} />
+                            <h5 className="or">or</h5>
+                            {/* upload picture */}
+                            <input type="file" onChange={handleChange} className="create image_url_input choose_file" />
+                            <button onClick={handleUpload} className="upload_pic" >Upload</button>
+                        </div>
                     </>:
                     <>
-                        <input type="text" id="imageURL" className="create image_url" placeholder="Enter image URL" 
-                        value={post.imageURL} onChange={handleControlledInputChange} defaultValue={post.imageURL}/>
+                        <img className="defaultValue_image" src={uploadedImageUrl? uploadedImageUrl : Placeholder} />
+                        <div className="enter_image">
+                            <input type="text" id="imageURL" className="create image_url_input" placeholder="🔗 Enter image URL" 
+                            value={post.imageURL} onChange={handleControlledInputChange} defaultValue={post.imageURL}/>
+                            <h5 className="or">or</h5>
+                            {/* upload picture */}
+                            <input type="file" onChange={handleChange} className="create image_url_input choose_file" />
+                            <button onClick={handleUpload} className="upload_pic" >Upload</button>
+                        </div>
                     </>
                 }
             </div>

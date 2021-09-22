@@ -10,7 +10,6 @@ body {
     margin-bottom: 1rem;
     padding: 2rem;
     border-radius: 1rem;
-    opacity: 0.8;
     background-image: url(./banner5.png);
     background-repeat:no-repeat;
     font-family: 'EB Garamond', serif;
@@ -33,6 +32,14 @@ body {
     font-size: 1.5rem;
     margin-right: 3.75rem;
     align-self: center;
+}
+
+.nav-item:hover {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-right: 3.75rem;
+    align-self: center;
+    filter: drop-shadow(0 0 1rem rgb(6, 107, 190) );
 }
 
 .logout {
