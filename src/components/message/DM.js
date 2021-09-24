@@ -1,12 +1,13 @@
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useState, useRef } from 'react';
 import { DMContext } from './DMProvider';
 import { UserContext } from '../user/UserProvider';
 import Back from "./back.png"
 import Send from "./send..png"
+import Delete from "/Users/ruobingz/workspace/midea/src/components/me/delete.png"
 
 export const DM = (props)  => {
 
-    const { DMs, getDMs, addDM, DMSearchTerms, setDMSearchTerms, markAsRead } = useContext(DMContext)
+    const { DMs, getDMs, addDM, deleteDM,DMSearchTerms, setDMSearchTerms, markAsRead } = useContext(DMContext)
     const { users, getUsers } = useContext(UserContext)
     const [ currentUserDMList, setCurrentUserDMList ] = useState([])
     const [ filteredDMs, setFilteredDMs ] = useState([])
@@ -18,7 +19,31 @@ export const DM = (props)  => {
     const [ latestUserDMs, setLatestUserDMs ] = useState([])
 
 
+    // 🔴🔴🔴 Polling
+    // function useInterval(callback, delay) {
+    //     const savedCallback = useRef();
+      
+    //     // Remember the latest callback.
+    //     useEffect(() => {
+    //       savedCallback.current = callback;
+    //     });
+      
+    //     // Set up the interval.
+    //     useEffect(() => {
+    //       function tick() {
+    //         savedCallback.current();
+    //       }
+    //       if (delay !== null) {
+    //         let id = setInterval(tick, delay);
+    //         return () => clearInterval(id);
+    //       }
+    //     }, [delay]);
+    //   }
+
+    //   useEffect(useInterval(() => {getDMs()}, 500), [DMs])
+
     useEffect(() => {getDMs()}, [])
+    
     useEffect(() => {getUsers()}, [])
 
     useEffect(() => {setDMSearchTerms("")}, []) 
@@ -106,7 +131,7 @@ export const DM = (props)  => {
             addDM(DMObj)
             setDM({})
         }    
-
+        // private chat returned result:
         return (
             <>
             <div className="private_header">
@@ -146,6 +171,11 @@ export const DM = (props)  => {
         )
     }
 
+    const handleDeleteDM = (DMId) => {
+        deleteDM(DMId)
+        
+    }
+
     // 🔴🔴🔴 DM BOX returned result
     if(filteredUsers.length > 0){
         return (
@@ -163,7 +193,6 @@ export const DM = (props)  => {
                 <ul className="searched_users">
                 {
                 filteredUsers.map(user => {
-
                     if(openPrivateChat === ""){
                     return (
                         <li className="searched_user">
@@ -195,9 +224,9 @@ export const DM = (props)  => {
                 <ul className="DMs">
                 {
                     latestUserDMs.map(DM => {
-
                         if(openPrivateChat === ""){
                             return (
+                                <div className="cover_DM">
                                 <li className="DM">
                                     <a class="notification">
                                         <img  src={DM.user.profileURL} className="DM_profile" /> 
@@ -214,8 +243,10 @@ export const DM = (props)  => {
                                             <div className="DM_user_name">{DM.user.name}</div>
                                             <small className="DM_preview">{DM.content.slice(0,35)}... </small>
                                     </button>
-                                </li> )
-
+                                    
+                                </li>
+                                <button><img className="delete_DM" src={Delete} onClick={() => handleDeleteDM(DM.id)} /></button>
+                                </div> )
                         } else if (openPrivateChat === DM.user.id){
                             return <PrivateMessage userId={DM.user.id} userName={DM.user.name} userProfile={DM.user.profileURL} /> 
                         }

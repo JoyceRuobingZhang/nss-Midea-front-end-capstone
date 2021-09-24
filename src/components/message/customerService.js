@@ -46,7 +46,7 @@ export function CustomerService() {
     <div>
       <Launcher
         agentProfile={{
-          teamName: 'Midea Team',
+          teamName: 'Midea',
           imageUrl: 'https://a.slack-edge.com/66f9/img/avatars-teams/ava_0001-34.png'
         }}
         onMessageWasSent={onMessageWasSent}

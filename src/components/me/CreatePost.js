@@ -74,7 +74,7 @@ export const CreatePost = () => {
                 source: post.source
             }
             addToFeed(newPost)
-             .then(() => history.push(`/post/detail/${post.id}`))
+             .then(() => history.push("/me"))
         } else {
             window.alert("Please enter the image URL or upload an image!")
         }

@@ -4,14 +4,14 @@
       "id": 1,
       "name": "World Travel",
       "email": "worldt@gmail.com",
-      "password": "123456",
+      "password": "worldt",
       "profileURL": "https://i.pinimg.com/736x/e2/4a/52/e24a521d4c48ec93d4c17b5b6450d50d.jpg"
     },
     {
       "id": 2,
       "name": "Cozy Home",
       "email": "pebbett0@nifty.com",
-      "password": "123456",
+      "password": "223344",
       "profileURL": "https://www.build-review.com/wp-content/uploads/2020/09/interior-design.jpg"
     },
     {
@@ -32,7 +32,7 @@
       "id": 5,
       "name": "Spiced Up",
       "email": "spiceup@yahoo.com",
-      "password": "123456",
+      "password": "121212",
       "profileURL": "https://www.gffoodservice.com.au/content/uploads/2019/08/culinary_terms-hero-1-@2x-1.jpg"
     },
     {
@@ -67,14 +67,14 @@
       "id": 10,
       "name": "Foodie's world",
       "email": "foodie@food.com",
-      "password": "123456",
+      "password": "979797",
       "profileURL": "https://ddxcu89oqzgqh.cloudfront.net/uploads/account/avatar/5ae251ff441ba51fa800156c/37815424_275489796386365_4887476348223750144_n.jpg"
     },
     {
       "id": 11,
       "name": "Wedding Planing",
-      "email": "grassh@twitter.com",
-      "password": "123456",
+      "email": "weddingp@twitter.com",
+      "password": "weddingp",
       "profileURL": "https://www.brides.com/thmb/3huypYOrQOzsLvxwx6R3RsuLDFk=/3000x2197/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__brides__public__brides-services__production__2018__11__20__5bf44542c9b3962dfaf110e7_15.20A20Day20in20May-c9a8fb20c2324c619b5b9538fa609cbd.jpg"
     },
     {
@@ -171,7 +171,7 @@
       "userId": 1,
       "imageURL": "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGhvdG9ncmFwaHl8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
       "time": "6/27/2020 7:05:06 PM",
-      "subject": "camera",
+      "subject": "camera electronics",
       "caption": "There are plenty of different types of cameras for beginners. You may be familiar with terms like “DSLR”, “mirrorless” and “compact” – if you’re not sure of the difference between them, jump straight to our section on what to consider when buying a camera, where we do our best to cut through the jargon...",
       "source": "https://images.unsplash.com"
     },
@@ -306,7 +306,7 @@
       "userId": 3,
       "imageURL": "https://m.media-amazon.com/images/I/71wz9CdUZoL._AC_SL1500_.jpg",
       "time": "8/5/2021 10:50:20 PM",
-      "subject": "camera",
+      "subject": "camera electronics",
       "caption": "There are plenty of different types of cameras for beginners. You may be familiar with terms like “DSLR”, “mirrorless” and “compact” – if you’re not sure of the difference between them, jump straight to our section on what to consider when buying a camera, where we do our best to cut through the jargon...",
       "source": "https://m.media-amazon.com"
     },
@@ -315,7 +315,7 @@
       "userId": 3,
       "imageURL": "https://s.yimg.com/os/creatr-uploaded-images/2020-08/d5a71c20-e2b8-11ea-9f3f-863a0ba7384e",
       "time": "8/5/2021 10:50:20 PM",
-      "subject": "camera",
+      "subject": "camera electronics",
       "caption": "There are plenty of different types of cameras for beginners. You may be familiar with terms like “DSLR”, “mirrorless” and “compact” – if you’re not sure of the difference between them, jump straight to our section on what to consider when buying a camera, where we do our best to cut through the jargon...",
       "source": "https://s.yimg.com"
     },
@@ -437,13 +437,40 @@
       "source": "https://www.usnews.com/news/best-countries/adventure-rankings"
     },
     {
+      "id": 36,
       "userId": 9,
-      "imageURL": "https://firebasestorage.googleapis.com/v0/b/midea-joyce.appspot.com/o/images%2Flama.jpg?alt=media&token=11ebe2c3-d5a4-4330-80d0-44ff8257d9f5",
-      "time": "Tue Sep 21 2021",
-      "caption": "lama",
-      "subject": "travel",
-      "source": "joyce",
-      "id": 36
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/midea-joyce.appspot.com/o/images%2Ftoast.jpg?alt=media&token=dbae5fcd-3b57-4122-973a-e24933c19fed",
+      "time": "Wed Sep 22 2021",
+      "caption": "6 Gourmet Toast recipes to upgrade your toast! Taking you beyond smashed avocado toast! From meat lovers to vegetarian, healthy to dessert, these recipes are what you need in your life…and in your belly! ...",
+      "subject": "food     ",
+      "source": "https://www.thekitchenwhisperer.net/"
+    },
+    {
+      "userId": 11,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/midea-joyce.appspot.com/o/images%2Fwedding.jpg?alt=media&token=02eecfbc-77b9-4c14-b1b1-d8dce4a16556",
+      "time": "Fri Sep 24 2021",
+      "caption": "Flowers are the most beautiful décor element that one can include for elevating their wedding setup. With the modernization of the wedding industry, many décor elements have been added to the catalog of flowers. Flower installations being a very popular choice of product among the wedding rental companies and other party and event rentals...",
+      "subject": "wedding",
+      "source": "https://luckyweddingrental.com/",
+      "id": 37
+    },
+    {
+      "userId": 11,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/midea-joyce.appspot.com/o/images%2Fweddingivi.jpg?alt=media&token=78366ca8-7d21-4692-bef7-602d967d4a44",
+      "time": "Fri Sep 24 2021",
+      "caption": "AT KSW EXCLUSIVE INVITATIONS YOU CAN FIND A VAST ASSORTMENT OF WEDDING INVITATIONS AND STATIONERY IN EVERY STYLE AND FOR EVERY BUDGET. WHETHER YOU'RE LOOKING FOR TRADITIONAL WEDDING STATIONERY OR SOMETHING THAT REFLECTS THE CURRENT TRENDS, KSW EXCLUSIVE INVITATIONS HAS JUST WHAT YOU'RE LOOKING FOR...",
+      "subject": "wedding ",
+      "source": "kswinvitations.com",
+      "id": 38
+    },
+    {
+      "userId": 11,
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/midea-joyce.appspot.com/o/images%2Fweddingi.jpg?alt=media&token=3bdc2d3f-8112-4a3a-af9b-2ef5e048983f",
+      "time": "Fri Sep 24 2021",
+      "caption": "Oh, hello gorgeous floral envelope liner! These moody and glam romantic wedding invitations from Amy of Smitten on Paper had me at those beautiful bold florals, but it was true love when I saw the matte gold foil, hand dyed silk ribbon, and seed paper in the rest of the invitation suite! The floral pattern on the envelope liner and plantable seed paper speaks to the couple’s love of the outdoors, while the dark and moody tones and matte gold foil are pure elegance and romance! ...",
+      "subject": "wedding",
+      "source": "https://ohsobeautifulpaper.com/",
+      "id": 39
     }
   ],
   "favorites": [
@@ -451,11 +478,6 @@
       "userId": 9,
       "postId": 3,
       "id": 3
-    },
-    {
-      "userId": 9,
-      "postId": 29,
-      "id": 8
     },
     {
       "userId": 9,
@@ -478,9 +500,24 @@
       "id": 18
     },
     {
+      "userId": 11,
+      "postId": 37,
+      "id": 20
+    },
+    {
+      "userId": 9,
+      "postId": 37,
+      "id": 21
+    },
+    {
+      "userId": 9,
+      "postId": 29,
+      "id": 22
+    },
+    {
       "userId": 9,
       "postId": 27,
-      "id": 19
+      "id": 23
     }
   ],
   "friends": [
@@ -505,9 +542,14 @@
       "id": 12
     },
     {
+      "userId": 17,
+      "currentUserId": 9,
+      "id": 17
+    },
+    {
       "userId": 5,
       "currentUserId": 9,
-      "id": 15
+      "id": 18
     }
   ],
   "comments": [
@@ -642,44 +684,12 @@
       "isRead": true
     },
     {
-      "id": 10,
-      "userId": 14,
-      "currentUserId": 9,
-      "time": "Thu Sep 12 2021 12:36:50",
-      "content": "Of course! Just @ our account next time you make a post!",
-      "isRead": true
-    },
-    {
-      "id": 11,
-      "userId": 2,
-      "currentUserId": 1,
-      "time": "Thu Sep 12 2021 12:36:50",
-      "content": "Hi！",
-      "isRead": true
-    },
-    {
-      "userId": 9,
-      "currentUserId": 11,
-      "time": "Tue Sep 21 2021 18:24:27",
-      "content": "hi",
-      "isRead": false,
-      "id": 12
-    },
-    {
-      "userId": 9,
-      "currentUserId": 13,
-      "time": "Tue Sep 21 2021 18:24:47",
-      "content": "ok",
-      "isRead": false,
-      "id": 13
-    },
-    {
       "userId": 1,
-      "currentUserId": 9,
-      "time": "Tue Sep 21 2021 18:25:22",
-      "content": "hi",
+      "currentUserId": 11,
+      "time": "Fri Sep 24 2021 16:24:52",
+      "content": "Hi there! ",
       "isRead": true,
-      "id": 14
+      "id": 10
     }
   ]
 }

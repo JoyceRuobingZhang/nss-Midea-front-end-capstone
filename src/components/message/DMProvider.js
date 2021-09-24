@@ -1,4 +1,4 @@
-import React, {createContext, useState} from 'react'
+import React, {createContext, useState, useRef, useEffect} from 'react'
 
 export const DMContext = createContext()
 
@@ -19,6 +19,7 @@ export const DMProvider = (props) => {
         .then(setDMs)
     }
 
+
     const addDM = (DMObj) => {
         return fetch(`${apiURL}/DMs`, {
             method: "POST",
@@ -28,6 +29,11 @@ export const DMProvider = (props) => {
             body: JSON.stringify(DMObj)
         })
         .then(res => res.json())
+        .then(getDMs)
+    }
+
+    const deleteDM = (DMId) => {
+        return fetch(`http://localhost:8000/DMs/${DMId}`, {method:"DELETE"})
         .then(getDMs)
     }
 
@@ -43,7 +49,7 @@ export const DMProvider = (props) => {
     }
 
     return (
-        <DMContext.Provider value={{DMs, getDMs, addDM, DMSearchTerms, setDMSearchTerms, totalUnreadNum, 
+        <DMContext.Provider value={{DMs, getDMs, addDM, deleteDM, DMSearchTerms, setDMSearchTerms, totalUnreadNum, 
         setTotalUnreadNum, markAsRead }}>
             {props.children}
         </DMContext.Provider>

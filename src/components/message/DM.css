@@ -191,3 +191,13 @@
     color: white;
     font-size: x-small;
 }
+
+.cover_DM {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete_DM {
+    width: 1rem;
+    align-self:right;
+}

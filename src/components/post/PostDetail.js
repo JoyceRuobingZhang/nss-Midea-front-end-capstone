@@ -34,7 +34,7 @@ export const PostDetail = () => {
         setPost(thisPost)
 
         // find all the similar posts
-        const theSimilarPosts = feed.filter(eachPost => eachPost.subject.includes(thisPost.subject)) 
+        const theSimilarPosts = feed.filter(eachPost => eachPost.subject.includes(thisPost.subject.trim())) 
         setSimilarPosts(theSimilarPosts)
 
         // find all the posts that are liked by the current user
@@ -49,6 +49,7 @@ export const PostDetail = () => {
     }, [postId, feed, favorites, friends])
 
 
+    // 🔴🔴🔴 similar posts slides
     const slides = similarPosts.map(similarPost => {
         return (
             <Link key={similarPost.id} to={`/post/detail/${similarPost.id}`}>
@@ -57,7 +58,7 @@ export const PostDetail = () => {
         )
     })
 
-    // favorite/unfavorite click functions
+    // 🔴🔴🔴 favorite/unfavorite click functions
     const history = useHistory()
     const MySwal = withReactContent(Swal)
     const currentUserId = sessionStorage.getItem("midea_user")
@@ -85,7 +86,7 @@ export const PostDetail = () => {
         }}).then(() => { return MySwal.fire(<p> Removed from your favorite list!</p>) })
     }
 
-    // follow/unFollow click functions
+    // 🔴🔴🔴 follow/unFollow click functions
     const handleFollow = (userId) => {
         const friendObj = {
             userId: userId,
