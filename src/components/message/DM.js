@@ -41,7 +41,8 @@ export const DM = (props)  => {
     const [ latestUserDMs, setLatestUserDMs ] = useState([])
 
 
-    useInterval(() => {getDMs()}, 500, [DMs])
+    // useInterval(getDMs, 500, []) ?? not sure if this line is right...
+    // useInterval(() => {getDMs()}, 500, [DMs])  * this line was working yesterday.
 
 
     useEffect(() => {getDMs()}, [])
