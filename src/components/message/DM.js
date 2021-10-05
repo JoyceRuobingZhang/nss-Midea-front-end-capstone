@@ -5,30 +5,10 @@ import Back from "./back.png"
 import Send from "./send..png"
 // import Delete from "/Users/ruobingz/workspace/midea/src/components/me/delete.png"
 
-// 🔴🔴🔴 Polling
-    function useInterval(callback, delay) {
-        const savedCallback = useRef();
-      
-        // Remember the latest callback.
-        useEffect(() => {
-          savedCallback.current = callback;
-        });
-      
-        // Set up the interval.
-        useEffect(() => {
-          function tick() {
-            savedCallback.current();
-          }
-          if (delay !== null) {
-            let id = setInterval(tick, delay);
-            return () => clearInterval(id);
-          }
-        }, [delay]);
-      }
 
 export const DM = (props)  => {
 
-    const { DMs, getDMs, addDM, deleteDM,DMSearchTerms, setDMSearchTerms, markAsRead } = useContext(DMContext)
+    const { DMs, getDMs, addDM, deleteDM, DMSearchTerms, setDMSearchTerms, markAsRead } = useContext(DMContext)
     const { users, getUsers } = useContext(UserContext)
     const [ currentUserDMList, setCurrentUserDMList ] = useState([])
     const [ filteredDMs, setFilteredDMs ] = useState([])
@@ -39,10 +19,6 @@ export const DM = (props)  => {
 
     // for the cover DMs
     const [ latestUserDMs, setLatestUserDMs ] = useState([])
-
-
-    // useInterval(getDMs, 500, []) ?? not sure if this line is right...
-    // useInterval(() => {getDMs()}, 500, [DMs])  * this line was working yesterday.
 
 
     useEffect(() => {getDMs()}, [])

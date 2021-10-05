@@ -26,7 +26,7 @@ export const PostDetail = () => {
     useEffect(() => {getFriends()}, [])
     useEffect(() => {getFavorites()}, [])
 
-    const {postId} = useParams()
+    const { postId } = useParams()
 
     useEffect(() => {
         // find the specific post to show detail

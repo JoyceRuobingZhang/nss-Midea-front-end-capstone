@@ -60,14 +60,14 @@
       "id": 9,
       "name": "Joyce Zhang",
       "email": "joyce@nss.com",
-      "password": "979797",
+      "password": "joyce",
       "profileURL": "https://avatars.githubusercontent.com/u/81496340?v=4"
     },
     {
       "id": 10,
       "name": "Foodie's world",
       "email": "foodie@food.com",
-      "password": "979797",
+      "password": "foodie",
       "profileURL": "https://ddxcu89oqzgqh.cloudfront.net/uploads/account/avatar/5ae251ff441ba51fa800156c/37815424_275489796386365_4887476348223750144_n.jpg"
     },
     {
@@ -404,8 +404,8 @@
       "id": 32,
       "userId": 9,
       "imageURL": "https://ae01.alicdn.com/kf/HTB1kfy9djrguuRjy0Feq6xcbFXaA/Cute-Cat-Soft-Cave-Bed-Funny-Mice-Shape-Kitten-House-With-Two-Playing-Ball-Toys-Warm.jpg_Q90.jpg_.webp",
-      "time": "Wed Sep 15 2021",
-      "caption": "Checkout this cute cat bed I got  for my cat's  birthday! It's super cozy and my cat absolutely loves it...!!!",
+      "time": "Thu Sep 30 2021",
+      "caption": "Checkout this cute cat bed I got  for my cat's  birthday! It's super cozy and my cat absolutely loves it...!!!.....",
       "subject": "pet cat",
       "source": "https://www.aliexpress.com/item/32919552183.html"
     },
@@ -439,8 +439,8 @@
     {
       "id": 36,
       "userId": 9,
-      "imageURL": "https://firebasestorage.googleapis.com/v0/b/midea-joyce.appspot.com/o/images%2Ftoast.jpg?alt=media&token=dbae5fcd-3b57-4122-973a-e24933c19fed",
-      "time": "Sat Sep 25 2021",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/midea-joyce.appspot.com/o/images%2Ftoast.jpg?alt=media&token=1676646d-226a-49e1-877a-c286b1cabeb5",
+      "time": "Tue Sep 28 2021",
       "caption": "6 Gourmet Toast recipes to upgrade your toast! Taking you beyond smashed avocado toast! From meat lovers to vegetarian, healthy to dessert, these recipes are what you need in your life…and in your belly! ...",
       "subject": "food     ",
       "source": "https://www.thekitchenwhisperer.net/"
@@ -471,15 +471,6 @@
       "subject": "wedding",
       "source": "https://ohsobeautifulpaper.com/",
       "id": 39
-    },
-    {
-      "userId": 9,
-      "imageURL": "https://firebasestorage.googleapis.com/v0/b/midea-joyce.appspot.com/o/images%2Flama.jpg?alt=media&token=c06faf57-8fe1-4de3-9575-5e38df5ffa5d",
-      "time": "Sat Sep 25 2021",
-      "caption": "lama",
-      "subject": "travel",
-      "source": "joyce",
-      "id": 40
     }
   ],
   "favorites": [
@@ -495,8 +486,8 @@
     },
     {
       "userId": 9,
-      "postId": 30,
-      "id": 15
+      "postId": 18,
+      "id": 16
     },
     {
       "userId": 9,
@@ -512,11 +503,6 @@
       "userId": 9,
       "postId": 37,
       "id": 21
-    },
-    {
-      "userId": 9,
-      "postId": 29,
-      "id": 22
     },
     {
       "userId": 9,
@@ -536,11 +522,6 @@
       "id": 9
     },
     {
-      "userId": 14,
-      "currentUserId": 9,
-      "id": 12
-    },
-    {
       "userId": 17,
       "currentUserId": 9,
       "id": 17
@@ -549,11 +530,6 @@
       "userId": 5,
       "currentUserId": 9,
       "id": 18
-    },
-    {
-      "userId": 1,
-      "currentUserId": 9,
-      "id": 19
     }
   ],
   "comments": [
@@ -702,14 +678,6 @@
       "content": "hi",
       "isRead": false,
       "id": 11
-    },
-    {
-      "userId": 11,
-      "currentUserId": 9,
-      "time": "Sat Sep 25 2021 10:02:19",
-      "content": "hi",
-      "isRead": true,
-      "id": 12
     }
   ]
 }

@@ -3,6 +3,7 @@ import { Link, useHistory } from "react-router-dom"
 import { HomeContext } from "../home/HomeProvider"
 import { DM } from "../message/DM"
 import { DMContext } from "../message/DMProvider"
+import useInterval from "../hooks/useIterval"
 import Logo from './logo midea.png'
 import Create from '../me/create.png'
 import DMIcon from './DM.png'
@@ -41,6 +42,8 @@ export const Navbar = () => {
     const totalUnreadDMs = currentUserDMList.filter(DM => DM.isRead === false)
     setTotalUnreadNum(totalUnreadDMs.length)
   }, [DMs])
+
+  useInterval(() => {getDMs()}, 3000)  
 
 
   return (
