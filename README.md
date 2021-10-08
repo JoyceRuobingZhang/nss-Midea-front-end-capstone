@@ -1,3 +1,7 @@
+ERD:
+<img width="850" alt="Screen Shot 2021-10-07 at 7 01 17 PM" src="https://user-images.githubusercontent.com/81496340/136477855-eedd0b83-3127-4834-ad43-e21f33efa65f.png">
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
