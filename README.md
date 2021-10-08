@@ -1,4 +1,4 @@
-ERD:
+ERD: <br>
 <img width="850" alt="Screen Shot 2021-10-07 at 7 01 17 PM" src="https://user-images.githubusercontent.com/81496340/136477855-eedd0b83-3127-4834-ad43-e21f33efa65f.png">
 
 
